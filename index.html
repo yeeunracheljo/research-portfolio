@@ -3,138 +3,846 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Yeeun Jo | Human-AI Interaction Research Portfolio</title>
-    <meta name="description" content="Graduate-school research portfolio focused on Human-AI Interaction, trust, reliance, judgment, and human behavior.">
+    <title>Yeeun Jo Portfolio</title>
+    <meta name="description" content="Graduate research portfolio for HCI, Human-AI Interaction, and Cognitive Science applications.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="index.html">Yeeun Jo</a>
-      <nav class="nav" aria-label="Main navigation">
-        <a class="active" href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="research-notes.html">Research Notes</a>
-        <a href="applied-projects.html">Applied Projects</a>
-        <a href="about.html">About</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-search-doc" viewBox="0 0 24 24">
+        <path d="M6 3h8l4 4v13H6z"></path><path d="M14 3v5h5"></path><path d="M9 12h3"></path><circle cx="14.5" cy="15.5" r="2.5"></circle><path d="M16.5 17.5 19 20"></path>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.1-6 8-6s6.5 2 8 6"></path>
+      </symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24">
+        <path d="M4 19V5"></path><path d="M4 19h17"></path><path d="M8 16v-5"></path><path d="M13 16V8"></path><path d="M18 16v-8"></path>
+      </symbol>
+      <symbol id="icon-method" viewBox="0 0 24 24">
+        <circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle><path d="M8 6h8"></path><path d="M6 8v8"></path><path d="M18 8v8"></path><path d="M8 18h8"></path>
+      </symbol>
+      <symbol id="icon-compass" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle><path d="m15 9-2 5-5 2 2-5z"></path>
+      </symbol>
+      <symbol id="icon-question" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle><path d="M9.8 9a2.4 2.4 0 0 1 4.6 1c0 2-2.4 2-2.4 4"></path><path d="M12 17.5h.01"></path>
+      </symbol>
+      <symbol id="icon-lightbulb" viewBox="0 0 24 24">
+        <path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M8 14a6 6 0 1 1 8 0c-.8.7-1 1.4-1 2H9c0-.6-.2-1.3-1-2Z"></path>
+      </symbol>
+      <symbol id="icon-file-text" viewBox="0 0 24 24">
+        <path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v5h5"></path><path d="M9 13h6"></path><path d="M9 17h5"></path>
+      </symbol>
+      <symbol id="icon-sparkle" viewBox="0 0 24 24">
+        <path d="M12 3 10 9l-6 3 6 3 2 6 2-6 6-3-6-3z"></path><path d="M5 4v4"></path><path d="M3 6h4"></path><path d="M19 16v4"></path><path d="M17 18h4"></path>
+      </symbol>
+      <symbol id="icon-bot" viewBox="0 0 24 24">
+        <rect x="5" y="8" width="14" height="11" rx="3"></rect><path d="M12 8V4"></path><path d="M9 4h6"></path><circle cx="9.5" cy="13" r="1"></circle><circle cx="14.5" cy="13" r="1"></circle><path d="M9 17h6"></path>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle><path d="m8 12 2.6 2.6L16.5 9"></path>
+      </symbol>
+      <symbol id="icon-columns" viewBox="0 0 24 24">
+        <rect x="4" y="5" width="6" height="14"></rect><rect x="14" y="5" width="6" height="14"></rect>
+      </symbol>
+      <symbol id="icon-eye-check" viewBox="0 0 24 24">
+        <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle><path d="m15.5 18 2 2 4-4"></path>
+      </symbol>
+      <symbol id="icon-pencil" viewBox="0 0 24 24">
+        <path d="M4 20h4l11-11-4-4L4 16z"></path><path d="m14 6 4 4"></path>
+      </symbol>
+      <symbol id="icon-route" viewBox="0 0 24 24">
+        <circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="18" r="2"></circle><path d="M8 6h4a4 4 0 0 1 0 8H9a3 3 0 0 0 0 6h7"></path>
+      </symbol>
+      <symbol id="icon-map-pin" viewBox="0 0 24 24">
+        <path d="M12 21s7-5.2 7-11a7 7 0 0 0-14 0c0 5.8 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle>
+      </symbol>
+      <symbol id="icon-radio" viewBox="0 0 24 24">
+        <path d="M4 12a8 8 0 0 1 16 0"></path><path d="M8 12a4 4 0 0 1 8 0"></path><circle cx="12" cy="12" r="1"></circle><path d="M12 13v8"></path>
+      </symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24">
+        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21z"></path><path d="M4 5.5V21"></path><path d="M8 7h8"></path>
+      </symbol>
+      <symbol id="icon-mic" viewBox="0 0 24 24">
+        <rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path>
+      </symbol>
+      <symbol id="icon-scale" viewBox="0 0 24 24">
+        <path d="M12 3v18"></path><path d="M5 6h14"></path><path d="m6 6-3 6h6z"></path><path d="m18 6-3 6h6z"></path>
+      </symbol>
+      <symbol id="icon-briefcase" viewBox="0 0 24 24">
+        <rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5h6v2"></path><path d="M3 12h18"></path>
+      </symbol>
+    </svg>
+
+    <header class="site-nav">
+      <a class="brand" href="#top" data-i18n="brand">Yeeun Jo</a>
+      <nav aria-label="Main navigation">
+        <a href="#case436-toc" data-i18n="navContents">Contents</a>
       </nav>
+      <div class="language-toggle" aria-label="Language switcher">
+        <button type="button" class="active" data-lang="en">EN</button>
+        <button type="button" data-lang="ko">KR</button>
+      </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <img src="assets/hai-trust-research-hero.png" alt="" class="hero-image">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="kicker">Graduate Research Portfolio</p>
-          <h1>Yeeun Jo</h1>
-          <p class="identity">Human-AI Interaction · Trust · Human Behavior</p>
-          <p class="question">“How does trust shape the way people interpret, rely on, and interact with AI?”</p>
-          <p class="intro">I study how people form trust, make judgments, verify information, and disclose personal experiences in technology-mediated contexts, with a growing focus on Human-AI Interaction and Human-AI reliance.</p>
-        </div>
+    <main id="top">
+      <section class="case436" id="dhu436">
+        <nav class="case436-dots" aria-label="DHU436 section navigation">
+          <a class="active" href="#case436-cover" aria-label="Title"></a>
+          <a href="#case436-toc" aria-label="Contents"></a>
+          <a href="#case436-course" aria-label="Course"></a>
+          <a href="#case436-project" aria-label="Project"></a>
+          <a href="#case436-framework" aria-label="Framework"></a>
+          <a href="#case436-human-ai" aria-label="Human versus AI"></a>
+          <a href="#case436-revision" aria-label="Revision"></a>
+          <a href="#case436-reflection" aria-label="Reflection"></a>
+        </nav>
+        <nav class="case-bottom-nav" data-course="Critical" aria-label="DHU436 page navigation">
+          <a href="#case436-course"><span>01</span> Course</a>
+          <a href="#case436-project"><span>02</span> Project</a>
+          <a href="#case436-framework"><span>03</span> Framework</a>
+          <a href="#case436-human-ai"><span>04</span> Analysis</a>
+          <a href="#case436-revision"><span>05</span> Human × AI</a>
+          <a href="#case436-reflection"><span>06</span> Reflection</a>
+        </nav>
+
+        <article class="case436-panel case436-black case436-title" id="case436-cover">
+          <p class="case436-kicker">Yeeun Rachel Jo</p>
+          <a href="#case436-toc" aria-label="Explore research"><span class="case436-mouse" aria-hidden="true"></span></a>
+        </article>
+
+        <article class="case436-panel case436-white case436-toc-panel" id="case436-toc">
+          <div class="case436-content">
+            <p class="case436-label" data-i18n="tocLabel">Contents</p>
+            <h2 data-i18n="tocTitle">Research Experience</h2>
+            <div class="case436-toc-list">
+              <a href="#case436-course"><span>01</span><strong data-i18n="tocDhuCapability">Critical Inquiry</strong><em data-i18n="tocDhuTheme">AI, Humanity & Generative AI</em><small data-i18n="tocDhuMeta">DHU436 · AI, Literature & Culture</small></a>
+              <a href="#env361-cover"><span>02</span><strong data-i18n="tocEnv361Capability">Human Action Beyond the Interface</strong><em data-i18n="tocEnv361Theme">From Online Information to Offline Participation</em><small data-i18n="tocEnv361Meta">ENV361 · Social Media and Environmentalism</small></a>
+              <a href="#env338-cover"><span>03</span><strong data-i18n="tocEnv338Capability">Data Analysis & Visualization</strong><em data-i18n="tocEnv338Theme">From Raw Data to Visual Insight</em><small data-i18n="tocEnv338Meta">ENV338 · Environmental Research Data & Decision-Making</small></a>
+              <a href="#env421-cover"><span>04</span><strong data-i18n="tocEnv421Capability">Mixed-Methods Research</strong><em data-i18n="tocEnv421Theme">Understanding Through Multiple Forms of Evidence</em><small data-i18n="tocEnv421Meta">ENV421 · Community Research for Social & Environmental Change</small></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-black case436-course-title" id="case436-course">
+          <p class="case436-kicker">DHU436 · Advanced Topics in Digital Humanities</p>
+          <p class="case436-meta">University of Toronto</p>
+          <h2>AI, Literature & Culture</h2>
+          <h3>Critical inquiry into artificial beings,<br>human identity, and generative AI.</h3>
+        </article>
+
+        <article class="case436-panel case436-white" id="case436-project">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <h2>AI, Literature & Culture</h2>
+              <p class="case436-muted">Advanced Topics in Digital Humanities · University of Toronto</p>
+              <p>A course examining AI and artificial beings through questions of human identity, emotion, and relationships. Through critical analysis of artificial beings in literature and a generative AI writing experiment, the course explored the boundary between human and artificial, and the differences between human and AI-generated outputs.</p>
+              <div class="case436-small-tags">
+                <span>Artificial Beings</span>
+                <span>Human Identity</span>
+                <span>Generative AI</span>
+                <span>Critical Inquiry</span>
+              </div>
+            </section>
+
+            <section class="case436-project-block">
+              <p class="case436-label">Featured Critical Project</p>
+              <h2>AI as a Mirror for Humanity</h2>
+              <p class="case436-question">What can artificial beings reveal about how we understand humanity itself?</p>
+              <p>Compared artificial beings across three works, analyzing how beings that resemble and seek to belong in human society reveal the boundary between the human and the non-human.</p>
+              <p class="case436-label">Primary Texts</p>
+              <div class="case436-text-row">
+                <div><strong>Frankenstein</strong><span>Mary Shelley</span></div>
+                <div><strong>Klara and the Sun</strong><span>Kazuo Ishiguro</span></div>
+                <div><strong>Do Androids Dream of Electric Sheep?</strong><span>Philip K. Dick</span></div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="case436-framework">
+          <div class="case436-content">
+            <p class="case436-label">Analytical Framework</p>
+            <div class="case436-framework-list">
+              <div><strong>01 Limitation</strong><p>Even if artificial beings can imitate human behavior and emotion, can that alone fully reproduce human experience and identity?</p></div>
+              <div><strong>02 Paradox</strong><p>How does the desire of artificial beings to become human paradoxically reveal the boundary between human and artificial?</p></div>
+              <div><strong>03 Human Identity</strong><p>How do the three works define humanity through elements such as relationships, emotion, experience, and belonging?</p></div>
+            </div>
+
+            <p class="case436-label">Key Argument</p>
+            <div class="case436-argument">
+              <strong data-i18n="dhuKeyArgumentText">The closer artificial beings come to resembling humans,<br>the more clearly they reveal what humans consider<br>to be distinctly “human.”</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="case436-human-ai">
+          <div class="case436-content">
+            <p class="case436-label">Cross-Text Analysis</p>
+            <div class="case436-stack">
+              <section>
+                <h3>Frankenstein</h3>
+                <span>Belonging & Rejection</span>
+                <p>Through the process of a Creature possessing human-like emotions and moral consciousness being excluded from society, this work questions whether ability or emotion alone is sufficient for recognition as human.</p>
+              </section>
+              <section>
+                <h3>Klara and the Sun</h3>
+                <span>Imitation & Replacement</span>
+                <p>Through the question of whether Klara, who can learn Josie’s behaviors and traits, can fully replace a person, the work explores whether identity and relationships are more than behavioral replication.</p>
+              </section>
+              <section>
+                <h3>Do Androids Dream of Electric Sheep?</h3>
+                <span>Empathy & Human Difference</span>
+                <p>Through androids nearly indistinguishable from humans, the work analyzes how empathy and emotional connection construct the boundary between human and artificial beings.</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="case436-revision">
+          <div class="case436-content">
+            <p class="case436-label">Human × Generative AI</p>
+            <h2>One Argument, Two Approaches</h2>
+            <p>After completing my own outline and essay independently, I generated an AI-written version addressing the same argument and compared the two approaches.</p>
+            <p>The purpose was not simply to determine which version was “better,” but to examine what each approach contributed to the argument and how comparison could inform revision.</p>
+            <div class="case436-compare">
+              <section><h3>My Writing</h3><span>Strengths</span><p>Textual Interpretation · Critical Analysis · Contextual Engagement · Personal Analytical Voice</p><hr><span>Limitations</span><p>Wordiness · Repetition · Transitions</p></section>
+              <section><h3>AI-Generated Version</h3><span>Strengths</span><p>Clarity · Concision · Organization · Linear Structure</p><hr><span>Limitations</span><p>Generic Analysis · Limited Textual Depth · Limited Personal Voice</p></section>
+            </div>
+
+            <p class="case436-label">Process</p>
+            <div class="case436-process-flow">
+              <div><strong>Write</strong><p>Independent outline and essay</p></div>
+              <div><strong>Generate</strong><p>AI-generated version of the same argument</p></div>
+              <div><strong>Compare</strong><p>Interpretation · Structure · Clarity · Depth</p></div>
+              <div><strong>Evaluate</strong><p>What strengthens the argument? What should be kept, revised, or rejected?</p></div>
+              <div><strong>Revise</strong><p>Final essay</p></div>
+            </div>
+
+            <p class="case436-label">Comparison → Revision</p>
+            <div class="case436-revision-map">
+              <div><span>My Original</span><p>Critical Interpretation<br>Textual Depth<br>Context<br>Personal Analysis</p></div>
+              <div><span>Selective AI Contribution</span><p>Clarity<br>Concision<br>Structure</p></div>
+              <em>Final Revision<br><b>Critical Depth + Clearer Structure</b></em>
+            </div>
+            <p class="case436-centered">The value of generative AI in this process came not from replacing my original analysis, but from creating a point of comparison through which I could evaluate and revise my own work.</p>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="case436-reflection">
+          <div class="case436-content">
+            <p class="case436-label">Reflection</p>
+            <h2>What I Learned</h2>
+            <div class="case436-reflection-box">
+              <p>The artificial beings in the three texts imitated human behavior and emotion, but resemblance alone did not make them human. Rather, the process revealed the criteria by which we judge humanity: relationships, experience, and emotional connection.</p>
+              <p>I found a similar question in the generative AI writing comparison. AI could produce human-like, well-structured writing, but a natural-sounding result did not necessarily mean deep interpretation. Determining what was meaningful and appropriate ultimately required comparison and evaluation.</p>
+            </div>
+            <div class="case436-insight">
+              <span>Key Insight</span>
+              <strong>What came to interest me was not how well AI imitates humans, but how humans interpret and judge what AI produces.</strong>
+            </div>
+            <p class="case436-original" data-i18n="dhuOriginalLabel">Original Work</p>
+            <div class="case436-output-links">
+              <section>
+                <span data-i18n="dhuOriginalProject">Final Project</span>
+                <a class="case436-button" href="assets/documents/dhu436-final.pdf" target="_blank" rel="noopener noreferrer" data-i18n="dhuOriginalCta">View Full Project ↗</a>
+              </section>
+            </div>
+          </div>
+        </article>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="kicker">Research Interests</p>
-          <h2>Connected questions about trust, reliance, and behavior</h2>
-        </div>
-        <div class="interest-grid">
-          <article class="card">
-            <h3>AI Trust & Reliance</h3>
-            <p>How and why people trust AI-generated information, and when they rely on it without additional verification.</p>
-          </article>
-          <article class="card">
-            <h3>Human Judgment & Behavior</h3>
-            <p>How trust in AI affects judgment, decision-making, verification, and downstream behavior.</p>
-          </article>
-          <article class="card">
-            <h3>Self-Disclosure & Reflection</h3>
-            <p>Whether people may disclose difficult thoughts or experiences more easily to AI, and whether AI-mediated interaction can support reflection.</p>
-          </article>
-          <article class="card">
-            <h3>Multilingual HAI</h3>
-            <p>How linguistic and cultural contexts may shape trust, communication, and self-disclosure with AI systems.</p>
-          </article>
-        </div>
-        <div class="flow-strip" aria-label="Conceptual research direction">
-          <span>Trust</span>
-          <span>Reliance</span>
-          <span>Judgment</span>
-          <span>Self-Disclosure / Behavior</span>
-        </div>
+      <section class="case436 case361" id="env361">
+        <nav class="case436-dots" aria-label="ENV361 section navigation">
+          <a class="active" href="#env361-cover" aria-label="ENV361 title"></a>
+          <a href="#env361-context" aria-label="Academic context"></a>
+          <a href="#env361-problem" aria-label="The problem"></a>
+          <a href="#env361-action" aria-label="From information to action"></a>
+          <a href="#env361-trust" aria-label="Trust and moderation"></a>
+          <a href="#env361-reflection" aria-label="Reflection"></a>
+          <a href="#env361-original" aria-label="Original work"></a>
+        </nav>
+        <nav class="case-bottom-nav" data-course="Action" aria-label="ENV361 page navigation">
+          <a href="#env361-context"><span>01</span> Context</a>
+          <a href="#env361-problem"><span>02</span> Gap</a>
+          <a href="#env361-action"><span>03</span> Action Path</a>
+          <a href="#env361-trust"><span>04</span> Trust</a>
+          <a href="#env361-reflection"><span>05</span> Reflection</a>
+          <a href="#env361-original"><span>06</span> Original Work</a>
+        </nav>
+
+        <article class="case436-panel case436-black case436-course-title" id="env361-cover">
+          <p>ENV361 · Social Media and Environmentalism</p>
+          <p class="case436-meta">University of Toronto</p>
+          <h2>PANDO</h2>
+          <h3>From Online Information<br>to Offline Action</h3>
+        </article>
+
+        <article class="case436-panel case436-white" id="env361-context">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label">Academic Context</p>
+              <h2>Imagining the Internet Otherwise</h2>
+              <p>PANDO was developed as a final project for ENV361: Social Media and Environmentalism. The project critically examined the limitations of existing social media platforms and proposed an alternative platform for climate justice.</p>
+              <p>Drawing on course discussions of digital activism, community-building, misinformation, accessibility, and environmental communication, the project explored how a social platform could move beyond information sharing toward meaningful participation.</p>
+              <div class="case436-small-tags">
+                <span>Platform Proposal</span>
+                <span>Climate Justice</span>
+                <span>Digital Activism</span>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env361-problem">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <h2>The Online–Offline Gap</h2>
+              <p class="case436-question">Information does not automatically lead to action.</p>
+              <p>Social media can rapidly spread environmental information and connect people to social movements. However, encountering, liking, or sharing information online does not necessarily translate into real-world participation.</p>
+              <p>PANDO began from this gap between encountering environmental information online and taking meaningful action beyond the platform.</p>
+            </section>
+            <div class="case436-framework-list">
+              <div><strong>Passive Engagement</strong><p>Online reactions such as likes, comments, and sharing may remain within the platform without leading to further participation.</p></div>
+              <div><strong>Information Overload</strong><p>Endless streams of information can make it difficult for users to identify relevant issues and concrete opportunities to participate.</p></div>
+              <div><strong>Misinformation</strong><p>Unreliable or misleading information can undermine trust and make meaningful participation more difficult.</p></div>
+            </div>
+            <div class="case436-argument">
+              <span>Core Question</span>
+              <strong>How could a social platform help turn<br>environmental information into real-world participation?</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env361-action">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <h2>Designing a Path to Action</h2>
+              <p class="case436-muted">From Information to Participation</p>
+              <p>Rather than designing another platform centered primarily on content consumption, PANDO was structured around what users could do after encountering environmental information.</p>
+            </section>
+            <div class="case436-action-path">
+              <section><span>Inform</span><strong>Relevant Environmental Information</strong></section>
+              <section><span>Connect</span><strong>Stories · Communities · Shared Interests</strong></section>
+              <section><span>Participate</span><strong>Petitions · Challenges · Calls to Action</strong></section>
+              <section><span>Act Offline</span><strong>Events · Volunteering · Clean-ups<br>Community Initiatives</strong></section>
+            </div>
+            <div class="case436-insight">
+              <span>Flow</span>
+              <strong>Information → Connection → Participation → Offline Action</strong>
+            </div>
+            <p class="case436-centered">The interaction should not end at the interface.</p>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env361-trust">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <h2>Trust Before Action</h2>
+              <p class="case436-question">Credible information matters when it can shape real-world action.</p>
+              <p>Because PANDO was designed to connect environmental information with opportunities for participation, the credibility of that information was also an important consideration.</p>
+            </section>
+            <div class="case436-process case436-process-compact">
+              <div><span>01</span><strong>Source Requirement</strong><p>Users provide supporting sources when sharing factual information.</p></div>
+              <div><span>02</span><strong>Community Flagging</strong><p>Users can report potentially misleading or problematic content.</p></div>
+              <div><span>03</span><strong>Automated Screening</strong><p>Potential violations are identified for further review.</p></div>
+              <div><span>04</span><strong>Human Review</strong><p>Flagged or questionable content is reviewed by human moderators.</p></div>
+            </div>
+            <div class="case436-argument">
+              <span>Principle</span>
+              <strong>Credible information was treated as a foundation<br>for meaningful participation.</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env361-reflection">
+          <div class="case436-content">
+            <h2>Beyond the Interface</h2>
+            <p class="case436-muted">What I Learned</p>
+            <div class="case436-reflection-box">
+              <p>This project changed how I thought about digital platforms. Rather than focusing only on what users see or consume on a screen, I began to consider what happens after an interaction.</p>
+              <p>Through PANDO, I began thinking about how digital interactions could create pathways from information toward participation beyond the platform.</p>
+            </div>
+            <div class="case436-process case436-process-compact">
+              <div><span>01</span><strong>What users see</strong></div>
+              <div><span>02</span><strong>What users can do next</strong></div>
+              <div><span>03</span><strong>What happens beyond the interface</strong></div>
+            </div>
+            <div class="case436-insight">
+              <span>Key Insight</span>
+              <strong>From designing information<br>to thinking about human action beyond the interface.</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env361-original">
+          <div class="case436-content">
+            <p class="case436-original">Original Work</p>
+            <div class="case436-output-links">
+              <section>
+                <span data-i18n="env361OriginalProject">Final Project</span>
+                <a class="case436-button" href="assets/documents/pando-project-report.pdf" target="_blank" rel="noopener noreferrer" data-i18n="env361OriginalProjectCta">View Project Report ↗</a>
+              </section>
+              <section>
+                <span data-i18n="env361OriginalPresentation">Final Presentation</span>
+                <a class="case436-button" href="assets/documents/pando-presentation.pdf" target="_blank" rel="noopener noreferrer" data-i18n="env361OriginalPresentationCta">View Presentation ↗</a>
+              </section>
+            </div>
+          </div>
+        </article>
       </section>
 
-      <section class="section muted">
-        <div class="section-heading">
-          <p class="kicker">Selected Research</p>
-          <h2>Empirical and structured research experience</h2>
-        </div>
-        <div class="project-grid">
-          <a class="project-card" href="research.html#anua">
-            <span class="project-type">Consumer Behavior Research</span>
-            <h3>Anua Consumer Behavior Research</h3>
-            <p>Survey screening and interview research on repeated exposure, familiarity, perceived trust, and consumer decision-making.</p>
-          </a>
-          <a class="project-card" href="research.html#mealcare">
-            <span class="project-type">Mixed-Methods Research</span>
-            <h3>MealCare Mixed-Methods Research</h3>
-            <p>Survey, interviews, focus groups, field observation, waste audit, and ethics-centered applied research design.</p>
-          </a>
-          <a class="project-card" href="research.html#env338">
-            <span class="project-type">Quantitative Field Research</span>
-            <h3>ENV338 Quantitative Field Research</h3>
-            <p>Hypothesis formation, sampling design, repeated measurement, and descriptive statistical comparison.</p>
-          </a>
-        </div>
+      <section class="case436 case338" id="env338">
+        <nav class="case436-dots" aria-label="ENV338 section navigation">
+          <a class="active" href="#env338-cover" aria-label="ENV338 title"></a>
+          <a href="#env338-context" aria-label="Data in context"></a>
+          <a href="#env338-conditions" aria-label="Sampling conditions"></a>
+          <a href="#env338-compare" aria-label="Comparing conditions"></a>
+          <a href="#env338-cross" aria-label="Cross-session comparison"></a>
+          <a href="#env338-insight" aria-label="From visuals to insight"></a>
+          <a href="#env338-analysis" aria-label="Visualization as analysis"></a>
+          <a href="#env338-reflection" aria-label="Reflection"></a>
+          <a href="#env338-original" aria-label="Original work"></a>
+        </nav>
+        <nav class="case-bottom-nav" data-course="Data" aria-label="ENV338 page navigation">
+          <a href="#env338-context"><span>01</span> Context</a>
+          <a href="#env338-conditions"><span>02</span> Conditions</a>
+          <a href="#env338-compare"><span>03</span> Compare</a>
+          <a href="#env338-insight"><span>04</span> Insight</a>
+          <a href="#env338-reflection"><span>05</span> Reflection</a>
+        </nav>
+
+        <article class="case436-panel case436-black case436-course-title" id="env338-cover">
+          <p data-i18n="env338CoverMeta">ENV338 · Environmental Research Data & Decision-Making</p>
+          <p class="case436-meta" data-i18n="env338CoverUni">University of Toronto</p>
+          <h2 data-i18n="env338CoverTitle">Environmental Data & Visualization</h2>
+          <h3 data-i18n="env338CoverSub">From Raw Data to Visual Insight</h3>
+        </article>
+
+        <article class="case436-panel case436-white" id="env338-context">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env338ContextLabel">Data in Context</p>
+              <h2 data-i18n="env338ContextTitle">Making Environmental Patterns Visible</h2>
+              <p data-i18n="env338ContextP1">Environmental data can be difficult to interpret as raw measurements alone.</p>
+              <p data-i18n="env338ContextP2">Using PM2.5 data collected across the University of Toronto campus, I explored how visualization could make differences across locations and sampling conditions easier to identify and compare.</p>
+            </section>
+            <div class="case436-argument">
+              <span data-i18n="env338CoreQuestionLabel">Core Question</span>
+              <strong data-i18n="env338CoreQuestion">How can visualization help reveal meaningful patterns in environmental data?</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env338-conditions">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <h2 data-i18n="env338ConditionsTitle">Three Sampling Conditions</h2>
+              <p data-i18n="env338ConditionsP">PM2.5 data was collected across three sessions designed around different campus and environmental conditions.</p>
+            </section>
+            <div class="case436-framework-list">
+              <div><strong data-i18n="env338Cond1Title">Exploratory Campus Route</strong><p data-i18n="env338Cond1P">Broad sampling across different campus environments.</p></div>
+              <div><strong data-i18n="env338Cond2Title">Lunch-Period Corridor</strong><p data-i18n="env338Cond2P">Focused sampling around the food-truck corridor during lunch.</p></div>
+              <div><strong data-i18n="env338Cond3Title">Rainy, Lower-Activity Condition</strong><p data-i18n="env338Cond3P">The same corridor sampled again under rainy and lower-activity conditions.</p></div>
+            </div>
+            <figure class="case338-figure case338-map-figure">
+              <img src="assets/images/env338/sampling-maps.png" alt="Session 1, Session 2, and Session 3 PM2.5 sampling route maps">
+            </figure>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env338-compare">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <h2 data-i18n="env338CompareTitle">Comparing Conditions</h2>
+              <p class="case436-muted" data-i18n="env338CompareSub">Same Measure, Different Patterns</p>
+            </section>
+            <div class="case338-session-grid">
+              <figure>
+                <img src="assets/images/env338/session1-histogram.png" alt="Session 1 PM2.5 histogram">
+                <figcaption><strong data-i18n="env338Session1Title">Session 1</strong><em data-i18n="env338Session1Sub">Exploratory Sampling</em><span data-i18n="env338Session1P">Broad Variation</span></figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/env338/session2-histogram.png" alt="Session 2 PM2.5 histogram">
+                <figcaption><strong data-i18n="env338Session2Title">Session 2</strong><em data-i18n="env338Session2Sub">Peak Activity</em><span data-i18n="env338Session2P">Higher Variability</span></figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/env338/session3-histogram.png" alt="Session 3 PM2.5 histogram">
+                <figcaption><strong data-i18n="env338Session3Title">Session 3</strong><em data-i18n="env338Session3Sub">Comparative Condition</em><span data-i18n="env338Session3P">Lower & More Stable</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env338-cross">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env338CrossLabel">Cross-Session Comparison</p>
+              <h2 data-i18n="env338CrossTitle">Seeing the Difference</h2>
+            </section>
+            <figure class="case338-figure">
+              <img class="case338-wide-visual" src="assets/images/env338/combined-histogram.png" alt="Combined comparison histogram of PM2.5 distributions for sessions 1, 2, and 3">
+              <figcaption>
+                <span data-i18n="env338CrossCaption">Bringing the three sessions into one visual comparison made differences in variability, distribution, and short-term spikes easier to compare.</span>
+              </figcaption>
+            </figure>
+            <div class="case338-caption-row">
+              <span><strong data-i18n="env338Cap1">Session 1</strong><em data-i18n="env338Cap1P">Broad Variation</em></span>
+              <span><strong data-i18n="env338Cap2">Session 2</strong><em data-i18n="env338Cap2P">Highest Variability</em></span>
+              <span><strong data-i18n="env338Cap3">Session 3</strong><em data-i18n="env338Cap3P">Lowest & Most Stable</em></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env338-insight">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env338InsightLabel">From Visuals to Insight</p>
+              <h2 data-i18n="env338InsightTitle">What Became Visible?</h2>
+            </section>
+            <div class="case436-framework-list">
+              <div><strong data-i18n="env338Insight1">Spatial Variation</strong><p data-i18n="env338Insight1P">Measurements varied across different campus locations.</p></div>
+              <div><strong data-i18n="env338Insight2">Short-Term Variation</strong><p data-i18n="env338Insight2P">Visualization made fluctuations easier to identify than from raw measurements alone.</p></div>
+              <div><strong data-i18n="env338Insight3">Condition Differences</strong><p data-i18n="env338Insight3P">Comparing sessions revealed differences in distribution and variability across sampling conditions.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env338-analysis">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env338AnalysisLabel">Additional Visualization Exploration</p>
+              <h2 data-i18n="env338AnalysisTitle">Different Views, Different Questions</h2>
+              <p data-i18n="env338AnalysisP">As an additional visualization exercise, environmental data was explored through multiple visual forms to examine how different representations can reveal different dimensions of a dataset.</p>
+            </section>
+            <figure class="case338-figure">
+              <img class="case338-wide-visual" src="assets/images/env338/multiple-views.png" alt="Distribution, time series, and spatial map views of PM2.5 measurements">
+            </figure>
+            <div class="case436-action-path case338-analysis-types">
+              <section><span data-i18n="env338Type1">Distribution</span><strong data-i18n="env338Type1P">How is the data distributed?</strong></section>
+              <section><span data-i18n="env338Type2">Time Series</span><strong data-i18n="env338Type2P">When do changes appear?</strong></section>
+              <section><span data-i18n="env338Type3">Spatial Map</span><strong data-i18n="env338Type3P">Where do changes appear?</strong></section>
+            </div>
+            <div class="case436-insight">
+              <span data-i18n="env338AnalysisInsightLabel">Key Idea</span>
+              <strong data-i18n="env338AnalysisInsight">Different visualizations reveal different dimensions of the same data.</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env338-reflection">
+          <div class="case436-content">
+            <p class="case436-label" data-i18n="env338ReflectionLabel">Reflection</p>
+            <h2 data-i18n="env338ReflectionTitle">What I Learned</h2>
+            <div class="case436-reflection-box">
+              <p data-i18n="env338Reflect1P">This project taught me to use visualization as part of the analytical process rather than simply as a way to present results.</p>
+              <p data-i18n="env338Reflect2P">By comparing the same type of measurement across different sampling conditions, I learned how visual choices can help reveal patterns, variability, and differences that are difficult to recognize from raw measurements alone.</p>
+            </div>
+            <div class="case436-insight">
+              <span data-i18n="env338KeyInsightLabel">Key Insight</span>
+              <strong data-i18n="env338KeyInsight">Visualization is not only a way to communicate data. It is a way to think with data.</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env338-original">
+          <div class="case436-content">
+            <p class="case436-original" data-i18n="env338OriginalLabel">Original Work</p>
+            <div class="case436-output-links">
+              <section>
+                <span data-i18n="env338OriginalReport">Final Analysis</span>
+                <a class="case436-button" href="assets/documents/env338-final-report.pdf" target="_blank" rel="noopener noreferrer" data-i18n="env338OriginalCta">View Full Analysis ↗</a>
+              </section>
+            </div>
+          </div>
+        </article>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="kicker">Research Journey</p>
-          <h2>A progression toward Human-AI Interaction</h2>
-        </div>
-        <ol class="timeline">
-          <li><strong>Human-AI Relationships</strong><span>AI, Literature & Culture</span></li>
-          <li><strong>Human Behavior</strong><span>Consumer Research</span></li>
-          <li><strong>Trust & Familiarity</strong><span>Anua</span></li>
-          <li><strong>Trust in AI-Assisted Work</strong><span>Professional Experience</span></li>
-          <li><strong>Human-AI Interaction</strong><span>Trust · Reliance · Judgment · Self-Disclosure</span></li>
-        </ol>
-      </section>
+      <section class="case436 case421" id="env421">
+        <nav class="case436-dots" aria-label="ENV421 section navigation">
+          <a class="active" href="#env421-cover" aria-label="ENV421 title"></a>
+          <a href="#env421-context" aria-label="Research context"></a>
+          <a href="#env421-approach" aria-label="Research approach"></a>
+          <a href="#env421-contribution" aria-label="My contribution"></a>
+          <a href="#env421-survey" aria-label="Survey findings"></a>
+          <a href="#env421-field" aria-label="Field research"></a>
+          <a href="#env421-synthesis" aria-label="Mixed-methods synthesis"></a>
+          <a href="#env421-recommendations" aria-label="Research translation"></a>
+          <a href="#env421-reflection" aria-label="Reflection"></a>
+          <a href="#env421-original" aria-label="Original work"></a>
+        </nav>
+        <nav class="case-bottom-nav" data-course="Methods" aria-label="ENV421 page navigation">
+          <a href="#env421-context"><span>01</span> Context</a>
+          <a href="#env421-approach"><span>02</span> Methods</a>
+          <a href="#env421-contribution"><span>03</span> Contribution</a>
+          <a href="#env421-survey"><span>04</span> Survey</a>
+          <a href="#env421-field"><span>05</span> Field</a>
+          <a href="#env421-synthesis"><span>06</span> Synthesis</a>
+          <a href="#env421-recommendations"><span>07</span> Recommendations</a>
+          <a href="#env421-reflection"><span>08</span> Reflection</a>
+        </nav>
 
-      <section class="section split">
-        <div>
-          <p class="kicker">Current Research Question</p>
-          <h2>From AI-assisted work to questions about verification</h2>
-        </div>
-        <p>My current professional use of AI-assisted automation systems has made trust visible as a practical and researchable problem: when a system produces useful outputs, people may become faster, more confident, and more dependent on it. I am interested in studying how users decide when to verify AI-generated work, when they accept it, and how repeated use shapes reliance over time.</p>
-      </section>
+        <article class="case436-panel case436-black case436-course-title" id="env421-cover">
+          <p data-i18n="env421CoverMeta">ENV421 · Community Research for Social & Environmental Change</p>
+          <p class="case436-meta" data-i18n="env421CoverUni">University of Toronto</p>
+          <h2 data-i18n="env421CoverTitle">Mixed-Methods Research</h2>
+          <h3 data-i18n="env421CoverSub">Understanding Food Waste Through Multiple Forms of Evidence</h3>
+        </article>
 
-      <section class="section muted">
-        <div class="section-heading">
-          <p class="kicker">Research Notes Preview</p>
-          <h2>Reading, critiquing, and extending HAI research</h2>
-        </div>
-        <div class="note-grid">
-          <a class="note-card" href="research-notes.html#trust-reliance">
-            <h3>AI Trust & Reliance</h3>
-            <p>Can repeated interaction increase perceived trust even when actual reliability remains unchanged?</p>
-          </a>
-          <a class="note-card" href="research-notes.html#self-disclosure">
-            <h3>AI & Self-Disclosure</h3>
-            <p>When are people more willing to disclose emotionally difficult experiences to AI than to another person?</p>
-          </a>
-          <a class="note-card" href="research-notes.html#multilingual">
-            <h3>Multilingual HAI</h3>
-            <p>Does native versus second-language interaction affect trust and willingness to self-disclose?</p>
-          </a>
-        </div>
+        <article class="case436-panel case436-white" id="env421-context">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env421ContextLabel">Research Context</p>
+              <h2 data-i18n="env421ContextTitle">Understanding Food Waste in Campus Dining</h2>
+              <p data-i18n="env421ContextP1">A community-based research project conducted with MealCare to investigate post-consumption food waste across University of Toronto dining halls.</p>
+              <p data-i18n="env421ContextP2">Rather than examining food waste only as a matter of quantity, the research considered both student behavior and the institutional context in which food waste occurred.</p>
+            </section>
+            <div class="case436-argument">
+              <span data-i18n="env421QuestionLabel">Research Question</span>
+              <strong data-i18n="env421QuestionText">What behavioral and operational factors contribute to food waste in campus dining environments?</strong>
+            </div>
+            <div class="case421-partner">
+              <span data-i18n="env421PartnerLabel">Community Partner</span>
+              <strong data-i18n="env421PartnerName">MealCare · University of Toronto</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env421-approach">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env421ApproachLabel">Research Approach</p>
+              <h2 data-i18n="env421ApproachTitle">Studying Behavior Through Multiple Methods</h2>
+              <p data-i18n="env421ApproachIntro">Rather than relying on a single source of data, the study combined different research methods to examine food-waste behavior from multiple perspectives.</p>
+            </section>
+            <div class="case421-method-grid">
+              <section>
+                <span data-i18n="env421Method1">Survey</span>
+                <h3 data-i18n="env421Method1Q">What do students report?</h3>
+                <strong data-i18n="env421Method1N">154 Students</strong>
+                <p data-i18n="env421Method1P">Self-reported experiences, behaviors, and perspectives</p>
+              </section>
+              <section>
+                <span data-i18n="env421Method2">Food Waste Audit & Field Observation</span>
+                <h3 data-i18n="env421Method2Q">What is actually discarded?</h3>
+                <strong data-i18n="env421Method2N">4 Dining Halls</strong>
+                <p data-i18n="env421Method2P">Observed post-consumption food waste in context</p>
+              </section>
+              <section>
+                <span data-i18n="env421Method3">Staff Interviews</span>
+                <h3 data-i18n="env421Method3Q">What happens operationally?</h3>
+                <strong data-i18n="env421Method3N">Operational Perspectives</strong>
+                <p data-i18n="env421Method3P">Dining practices, constraints, and interventions</p>
+              </section>
+            </div>
+            <div class="case421-equation">
+              <span data-i18n="env421Eq1">Survey</span>
+              <b>+</b>
+              <span data-i18n="env421Eq2">Field Evidence</span>
+              <b>+</b>
+              <span data-i18n="env421Eq3">Operational Context</span>
+              <em>↓</em>
+              <strong data-i18n="env421EqResult">Multiple Perspectives<br>on the Same Behavior</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env421-contribution">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env421ContributionLabel">My Contribution</p>
+              <h2 data-i18n="env421ContributionTitle">Survey Research & Field Research</h2>
+              <p data-i18n="env421ContributionIntro">I contributed across the broader research process, with my primary focus on survey research and field data collection.</p>
+            </section>
+            <div class="case421-contribution-grid">
+              <section>
+                <span data-i18n="env421SurveyFocusLabel">Survey Research</span>
+                <h3 data-i18n="env421SurveyFocusTitle">Primary Focus</h3>
+                <div class="case436-process-flow case421-process">
+                  <div><strong data-i18n="env421SurveyStep1">Design</strong></div>
+                  <div><strong data-i18n="env421SurveyStep2">Methodology</strong></div>
+                  <div><strong data-i18n="env421SurveyStep3">Data Collection</strong></div>
+                  <div><strong data-i18n="env421SurveyStep4">Analysis</strong></div>
+                  <div><strong data-i18n="env421SurveyStep5">Findings</strong></div>
+                </div>
+                <p data-i18n="env421SurveyFocusP">I took primary responsibility for the survey component, from developing the survey approach and methodology to analyzing student responses and identifying patterns in the findings.</p>
+              </section>
+              <section>
+                <span data-i18n="env421FieldFocusLabel">Field Research</span>
+                <h3 data-i18n="env421FieldFocusTitle">Canada Room Dining Hall</h3>
+                <p class="case436-muted" data-i18n="env421FieldFocusMeta">St. Michael's College · University of Toronto</p>
+                <div class="case436-process-flow case421-process three">
+                  <div><strong data-i18n="env421FieldStep1">Observe</strong></div>
+                  <div><strong data-i18n="env421FieldStep2">Record</strong></div>
+                  <div><strong data-i18n="env421FieldStep3">Measure</strong></div>
+                </div>
+                <p data-i18n="env421FieldFocusP">I participated in on-site data collection at the Canada Room Dining Hall, contributing to the structured food-waste audit and observing dining and disposal behavior in context.</p>
+              </section>
+            </div>
+            <div class="case436-reflection-box">
+              <p data-i18n="env421CommP">I also presented the research background and MealCare partnership as part of the final research presentation.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env421-survey">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env421SurveyLabel">Survey Findings</p>
+              <h2 data-i18n="env421SurveyTitle">What Students Told Us</h2>
+            </section>
+            <div class="case421-large-stat">
+              <strong>154</strong>
+              <span data-i18n="env421StudentsSurveyed">Students Surveyed</span>
+            </div>
+            <section class="case421-finding">
+              <p class="case436-label" data-i18n="env421Finding1Label">Finding 01</p>
+              <h3 data-i18n="env421Finding1Title">What Foods Were Most Frequently Discarded?</h3>
+              <div class="case421-bar-chart" aria-label="Most frequently discarded foods">
+                <div style="--value: 48.1"><span data-i18n="env421Discard1">Carbohydrates</span><b>48.1%</b><i></i></div>
+                <div style="--value: 14.9"><span data-i18n="env421Discard2">Vegetables & Fruits</span><b>14.9%</b><i></i></div>
+                <div style="--value: 13"><span data-i18n="env421Discard3">Proteins</span><b>13.0%</b><i></i></div>
+              </div>
+              <p data-i18n="env421Finding1P">Carbohydrates were the most frequently reported category of discarded food.</p>
+            </section>
+            <section class="case421-finding">
+              <p class="case436-label" data-i18n="env421Finding2Label">Finding 02</p>
+              <h3 data-i18n="env421Finding2Title">Beyond Portion Size</h3>
+              <p class="case436-question" data-i18n="env421Finding2Statement">Portion size alone did not explain food waste.</p>
+              <div class="case421-factor-list">
+                <span data-i18n="env421Factor1">Poor Taste</span>
+                <span data-i18n="env421Factor2">Undercooking</span>
+                <span data-i18n="env421Factor3">Fluctuating Appetite</span>
+                <span data-i18n="env421Factor4">Eating Behavior & Attention</span>
+              </div>
+              <p data-i18n="env421Finding2P">Student responses also pointed to factors such as poor taste, undercooking, and fluctuating appetite, suggesting that food waste could not be explained by portion size alone.</p>
+            </section>
+            <section class="case421-finding">
+              <p class="case436-label" data-i18n="env421Finding3Label">Finding 03</p>
+              <h3 data-i18n="env421PrefTitle">What Interventions Did Students Prefer?</h3>
+              <div class="case421-bar-chart secondary" aria-label="Preferred interventions">
+                <div style="--value: 37.7"><span data-i18n="env421Pref1">Flexible Portion Options</span><b>37.7%</b><i></i></div>
+                <div style="--value: 24.7"><span data-i18n="env421Pref2">Taste Tests Before a Full Portion</span><b>24.7%</b><i></i></div>
+                <div style="--value: 16.9"><span data-i18n="env421Pref3">Composting Uneaten Food</span><b>16.9%</b><i></i></div>
+              </div>
+              <p data-i18n="env421PrefP">Students showed stronger preference for preventive strategies that could reduce waste before disposal.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env421-field">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env421FieldLabel">Field Research</p>
+              <h2 data-i18n="env421FieldTitle">From Self-Report to Observed Behavior</h2>
+              <p class="case436-muted" data-i18n="env421FieldSub">Canada Room Dining Hall · St. Michael's College</p>
+            </section>
+            <div class="case421-audit-evidence" aria-label="Food waste audit findings">
+              <section><strong>37-39%</strong><span data-i18n="env421Audit1">Edible Leftovers</span><p data-i18n="env421Audit1P">of observed plates contained edible leftovers</p></section>
+              <section><strong>94.2 kg</strong><span data-i18n="env421Audit2">Estimated Food Waste</span><p data-i18n="env421Audit2P">during the audit period</p></section>
+              <section><strong>150.16 g</strong><span data-i18n="env421Audit3">Average Waste per Plate</span><p data-i18n="env421Audit3P">estimated average per plate</p></section>
+            </div>
+            <div class="case421-stat-grid two case421-audit-stats">
+              <div><span data-i18n="env421Weekend">Weekend</span><strong>124</strong><p data-i18n="env421WeekendP">Plates Observed<br>47 Plates with Edible Leftovers<br>37.9%</p></div>
+              <div><span data-i18n="env421Weekday">Weekday</span><strong>300</strong><p data-i18n="env421WeekdayP">Plates Observed<br>117 Plates with Edible Leftovers<br>39.0%</p></div>
+            </div>
+            <p class="case436-centered" data-i18n="env421FieldP">Field research provided a way to examine food-waste behavior within an actual dining environment rather than relying only on self-reported responses.</p>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env421-synthesis">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env421SynthesisLabel">Mixed-Methods Synthesis</p>
+              <h2 data-i18n="env421SynthesisTitle">Understanding Behavior in Context</h2>
+            </section>
+            <div class="case421-synthesis">
+              <section><span data-i18n="env421Syn1">Survey</span><strong data-i18n="env421Syn1Q">What students said</strong><p data-i18n="env421Syn1P">Experiences · Reasons · Preferences</p></section>
+              <b>+</b>
+              <section><span data-i18n="env421Syn2">Audit & Observation</span><strong data-i18n="env421Syn2Q">What happened in context</strong><p data-i18n="env421Syn2P">Leftovers · Disposal · Dining Behavior</p></section>
+              <b>+</b>
+              <section><span data-i18n="env421Syn3">Staff Interviews</span><strong data-i18n="env421Syn3Q">What staff described</strong><p data-i18n="env421Syn3P">Practices · Protocols · Operational Context</p></section>
+            </div>
+            <div class="case436-argument">
+              <span>↓</span>
+              <strong data-i18n="env421SynResult">A More Complete Picture<br>of Food-Waste Behavior</strong>
+            </div>
+            <p class="case436-centered" data-i18n="env421SynP">Different methods revealed different dimensions of the same behavioral problem.</p>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env421-recommendations">
+          <div class="case436-content">
+            <section class="case436-intro">
+              <p class="case436-label" data-i18n="env421TranslationLabel">Research Translation</p>
+              <h2 data-i18n="env421TranslationTitle">From Evidence to Recommendations</h2>
+            </section>
+            <div class="case436-process-flow case421-process three">
+              <div><strong data-i18n="env421TransStep1">Evidence</strong></div>
+              <div><strong data-i18n="env421TransStep2">Interpretation</strong></div>
+              <div><strong data-i18n="env421TransStep3">Recommendation</strong></div>
+            </div>
+            <div class="case421-recommendation-grid">
+              <section><span data-i18n="env421Level1">Behavioral Findings</span><h3 data-i18n="env421Level1Title">What the evidence suggested</h3><p data-i18n="env421Level1P">Food choice<br>Taste and attention<br>Dining behavior</p></section>
+              <section><span data-i18n="env421Level2">Preventive Interventions</span><h3 data-i18n="env421Level2Title">Before waste occurs</h3><p data-i18n="env421Level2P">Flexible Serving Options<br>Try-Before-You-Commit Taste Tests<br>Student Awareness Interventions</p></section>
+              <section><span data-i18n="env421Level3">Institutional Recommendations</span><h3 data-i18n="env421Level3Title">Changing the environment</h3><p data-i18n="env421Level3P">Regular Waste Audits & Surveys<br>Improved Dining Hall Collaboration<br>Food Redistribution / Community-Fridge Awareness</p></section>
+            </div>
+            <div class="case421-translation-note">
+              <p data-i18n="env421TranslationP">The research moved beyond documenting food waste toward identifying practical opportunities for MealCare and campus dining stakeholders.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env421-reflection">
+          <div class="case436-content">
+            <p class="case436-label" data-i18n="env421ReflectionLabel">Reflection</p>
+            <h2 data-i18n="env421ReflectionTitle">Researching Through Multiple Methods</h2>
+            <p class="case436-muted" data-i18n="env421ReflectionSub">What I Learned</p>
+            <div class="case436-reflection-box">
+              <p data-i18n="env421ReflectionP1">This project gave me experience investigating a research question through multiple forms of evidence.</p>
+              <p data-i18n="env421ReflectionP2">The study brought together survey research, field observation, structured waste audits, and staff interviews, each providing a different perspective on the research question.</p>
+              <p data-i18n="env421ReflectionP3">Working with these findings taught me to consider what each method can reveal and how different forms of evidence can be interpreted together.</p>
+            </div>
+            <div class="case421-evidence-map" aria-label="Methods to evidence synthesis">
+              <section>
+                <span data-i18n="env421EvidenceSurvey">Survey</span>
+                <strong data-i18n="env421EvidenceSurveyP">Self-Reported Experiences<br>& Perspectives</strong>
+              </section>
+              <section>
+                <span data-i18n="env421EvidenceField">Field Observation<br>& Structured Audit</span>
+                <strong data-i18n="env421EvidenceFieldP">Behavior in Context</strong>
+              </section>
+              <section>
+                <span data-i18n="env421EvidenceInterview">Staff Interviews</span>
+                <strong data-i18n="env421EvidenceInterviewP">Operational Perspectives</strong>
+              </section>
+              <div>
+                <span data-i18n="env421EvidenceSynthesis">Synthesis</span>
+                <strong data-i18n="env421EvidenceSynthesisP">Connecting Multiple<br>Forms of Evidence</strong>
+              </div>
+            </div>
+            <div class="case436-insight">
+              <span data-i18n="env421KeyInsightLabel">Key Insight</span>
+              <strong data-i18n="env421KeyInsight">Different methods reveal different parts<br>of human behavior.</strong>
+              <p data-i18n="env421KeyInsightSub">Combining self-reported experiences, observed behavior, and operational perspectives provided a more complete understanding of the research question.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="case436-panel case436-white" id="env421-original">
+          <div class="case436-content">
+            <p class="case436-original" data-i18n="env421OriginalLabel">Original Work</p>
+            <div class="case436-output-links">
+              <section>
+                <span data-i18n="env421OriginalOutput">Final Research Report</span>
+                <a class="case436-button" href="assets/documents/mealcare-food-waste-research.pdf" target="_blank" rel="noopener noreferrer" data-i18n="env421OriginalCta1">View Full Research Report ↗</a>
+              </section>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>Yeeun Jo · Human-AI Interaction · Trust · Human Behavior</p>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
