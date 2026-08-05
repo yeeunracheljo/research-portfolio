@@ -2706,13 +2706,22 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 220px));
   gap: 14px;
+  width: min(100%, 454px);
   text-align: center;
+}
+
+.case436-output-links:has(section:only-child) {
+  grid-template-columns: minmax(0, 260px);
+  width: min(100%, 260px);
 }
 
 .case436-output-links section {
   display: grid;
   gap: 12px;
   justify-items: center;
+  padding: 20px 18px;
+  border: 1px solid var(--case-line);
+  background: #ffffff;
 }
 
 .case436-output-links span {
@@ -2954,7 +2963,8 @@ h3 {
 }
 
 .case421-contribution-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
+  max-width: 900px;
 }
 
 .case421-process {
