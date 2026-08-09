@@ -1877,10 +1877,12 @@ h3 {
   z-index: 30;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(18px, 3vw, 48px);
-  padding: 10px clamp(28px, 6vw, 72px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  background: rgba(255, 255, 255, 0.94);
+  gap: 0;
+  min-height: 88px;
+  padding: 0 clamp(48px, 11vw, 220px);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  background: rgba(255, 255, 255, 0.97);
   opacity: 0;
   pointer-events: none;
 }
@@ -1891,61 +1893,91 @@ h3 {
 }
 
 .research-project-index a {
+  position: relative;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 10px;
+  grid-template-columns: auto minmax(0, max-content);
+  gap: 4px 13px;
+  align-content: center;
+  justify-content: center;
   align-items: baseline;
   min-width: 0;
-  padding: 4px 0 6px;
-  border-bottom: 1px solid transparent;
-  color: #999999;
+  padding: 16px 10px 19px;
+  border-bottom: 0;
+  color: #8d8d8d;
   text-decoration: none;
+}
+
+.research-project-index a::after {
+  content: "";
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: -1px;
+  height: 3px;
+  background: transparent;
 }
 
 .research-project-index span,
 .research-project-index small {
   color: inherit;
-  font-size: 0.58rem;
+  font-size: 0.78rem;
   font-weight: 780;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
+}
+
+.research-project-index span {
+  justify-self: end;
+  line-height: 1.05;
 }
 
 .research-project-index strong {
   overflow: hidden;
   color: inherit;
-  font-size: 0.72rem;
-  font-weight: 760;
-  letter-spacing: 0.02em;
+  font-size: 0.83rem;
+  font-weight: 700;
+  letter-spacing: 0;
   line-height: 1.1;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+.research-project-index small {
+  grid-column: 2;
+  color: inherit;
+  font-size: 0.62rem;
+  font-weight: 620;
+  line-height: 1.15;
+  opacity: 0.86;
+}
+
 .research-project-index a.active {
-  border-bottom-color: #111111;
   color: #111111;
+}
+
+.research-project-index a.active::after {
+  background: #111111;
+}
+
+.research-project-index a.active span {
+  box-shadow: inset 0 -2px 0 #111111;
 }
 
 @media (max-width: 900px) {
   .research-project-index {
-    grid-template-columns: repeat(4, minmax(138px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(4, minmax(190px, 1fr));
     overflow-x: auto;
-    padding: 9px 24px;
+    min-height: 78px;
+    padding: 0 24px;
   }
 
   .research-project-index a {
-    grid-template-columns: auto 1fr;
-    gap: 6px 9px;
-  }
-
-  .research-project-index small {
-    grid-column: 2;
+    justify-content: start;
+    padding-block: 13px 17px;
   }
 
   .research-project-index strong {
-    white-space: normal;
+    white-space: nowrap;
   }
 }
 
