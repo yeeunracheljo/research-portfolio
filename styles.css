@@ -5411,8 +5411,8 @@ body,
 
 .pando-transformation {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr) minmax(0, 1fr);
-  gap: clamp(22px, 4vw, 58px);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 42px);
   align-items: stretch;
   width: 100%;
 }
@@ -5449,7 +5449,7 @@ body,
   line-height: 1.55 !important;
 }
 
-.pando-bridge {
+.pando-destination {
   border-top-color: var(--case-ink);
 }
 
