@@ -4166,6 +4166,20 @@ select {
   transition: none !important;
 }
 
+.case436 {
+  --accent: #111111;
+}
+
+.project-overview-box,
+.project-overview-box * {
+  box-shadow: none !important;
+}
+
+.case436-button {
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
 .case436-button:hover,
 .case436-toc-list a:hover,
 .case436-text-row div:hover,
@@ -5127,8 +5141,12 @@ body,
 .case338-session-grid figure,
 .case338-figure,
 .case421-bar-chart,
-.case421-audit-evidence {
-  border-radius: 5px !important;
+.case421-audit-evidence,
+.relationship-node,
+.relationship-result,
+.research-flow span,
+.research-flow div {
+  border-radius: 4px !important;
 }
 
 .evidence-grid {
@@ -5172,7 +5190,7 @@ body,
 .sequence-line strong {
   color: var(--case-ink);
   font-size: clamp(0.96rem, 1.3vw, 1.12rem);
-  font-weight: 760;
+  font-weight: 680;
   line-height: 1.25;
 }
 
@@ -5398,10 +5416,13 @@ body,
   justify-items: center;
   text-align: center;
   background: transparent;
+  box-shadow: none !important;
 }
 
 .case436-output-links .case436-button {
   justify-self: center;
+  border-radius: 4px !important;
+  box-shadow: none !important;
 }
 
 @media (max-width: 900px) {
