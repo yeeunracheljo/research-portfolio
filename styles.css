@@ -6404,9 +6404,9 @@ body,
 }
 
 .case436-course-title h2 {
-  font-size: clamp(2.3rem, 4.5vw, 3.7rem) !important;
-  letter-spacing: -0.035em !important;
-  line-height: 0.98 !important;
+  font-size: clamp(1.45rem, 2.45vw, 2.1rem) !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.15 !important;
 }
 
 .case436-course-title h3 {
@@ -6484,7 +6484,7 @@ body,
 
 @media (max-width: 760px) {
   .case436-course-title h2 {
-    font-size: clamp(2rem, 11vw, 3.2rem) !important;
+    font-size: clamp(1.45rem, 7vw, 2.1rem) !important;
   }
 
   .case436-panel.case436-white h2 {
