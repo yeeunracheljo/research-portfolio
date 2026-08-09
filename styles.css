@@ -3554,6 +3554,262 @@ h3 {
   font-size: clamp(1.8rem, 3.4vw, 2.8rem);
 }
 
+.case436-text-row div,
+.case436-stack section,
+.case436-process div,
+.case436-compare section,
+.case436-argument,
+.case436-revision-map div,
+.case436-revision-map em,
+.case436-reflection-box,
+.case436-insight,
+.case421-method-grid section,
+.case421-contribution-grid section,
+.case421-stat-grid div,
+.case421-audit-evidence section,
+.case421-synthesis section,
+.case436-output-links section,
+.relationship-node,
+.relationship-result,
+.research-flow span,
+.research-flow div {
+  border-radius: 8px !important;
+}
+
+.case436-button {
+  border-radius: 6px !important;
+}
+
+.research-relationship {
+  position: relative;
+  display: grid;
+  gap: 28px;
+  width: 100%;
+}
+
+.relationship-sources {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.comparison-map .relationship-sources,
+.dual-diagram-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.relationship-sources::after {
+  content: "";
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  bottom: -15px;
+  height: 1px;
+  background: var(--case-line);
+}
+
+.relationship-node {
+  position: relative;
+  min-height: 120px;
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  padding: 18px;
+  border: 1px solid var(--case-line);
+  background: #ffffff;
+}
+
+.relationship-node::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -29px;
+  width: 1px;
+  height: 28px;
+  background: var(--case-line);
+}
+
+.relationship-node span,
+.relationship-result span,
+.research-flow > p,
+.research-chain span,
+.research-flow span,
+.research-flow div strong {
+  color: var(--case-faint);
+  font-size: 0.64rem;
+  font-weight: 780;
+  letter-spacing: 0.14em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.relationship-node strong,
+.relationship-result strong {
+  color: var(--case-ink);
+  font-size: clamp(0.96rem, 1.3vw, 1.12rem);
+  font-weight: 760;
+  line-height: 1.2;
+}
+
+.relationship-node p,
+.relationship-result p,
+.research-flow span strong,
+.research-flow div p {
+  margin: 0;
+  color: var(--case-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.relationship-result {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 560px);
+  display: grid;
+  gap: 10px;
+  padding: 22px 26px;
+  border: 1px solid var(--case-ink);
+  background: #ffffff;
+  text-align: center;
+}
+
+.relationship-result::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -28px;
+  width: 1px;
+  height: 28px;
+  background: var(--case-ink);
+}
+
+.relationship-result::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid var(--case-ink);
+  border-bottom: 1px solid var(--case-ink);
+  transform: translateX(-50%) rotate(45deg);
+  background: #ffffff;
+}
+
+.compact-chain,
+.visualization-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.research-chain span {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 8px 11px;
+  border: 1px solid var(--case-line);
+  background: #ffffff;
+}
+
+.research-chain em {
+  width: 32px;
+  height: 1px;
+  background: var(--case-ink);
+}
+
+.dual-diagram-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.research-flow {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.research-flow > p {
+  margin: 0 0 4px;
+}
+
+.research-flow span,
+.research-flow div {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  min-height: 58px;
+  padding: 14px 16px;
+  border: 1px solid var(--case-line);
+  background: #ffffff;
+}
+
+.vertical-flow span:not(:last-child)::after,
+.data-framework > span:first-child::after,
+.data-framework > div::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+  width: 1px;
+  height: 13px;
+  background: var(--case-line);
+}
+
+.data-framework {
+  grid-template-columns: 0.9fr repeat(3, 1fr) 1fr;
+  align-items: stretch;
+}
+
+.data-framework > span,
+.data-framework > div {
+  min-height: 80px;
+  align-content: center;
+  text-align: center;
+}
+
+.data-framework > span:first-child,
+.data-framework > span:last-child {
+  border-color: var(--case-ink);
+}
+
+.data-framework > span:first-child::after,
+.data-framework > div::after {
+  left: auto;
+  right: -13px;
+  bottom: 50%;
+  width: 13px;
+  height: 1px;
+}
+
+.convergence-result {
+  margin-top: -4px;
+}
+
+.case338-session-grid figure,
+.case338-figure,
+.case421-bar-chart,
+.case421-audit-evidence {
+  border-radius: 8px !important;
+}
+
+.relationship-node:hover,
+.research-flow span:hover,
+.research-flow div:hover,
+.case338-session-grid figure:hover,
+.case338-figure:hover {
+  border-color: #111111 !important;
+}
+
+.relationship-node:hover::after,
+.research-flow span:hover::after,
+.research-flow div:hover::after {
+  background: #111111;
+}
+
 @media (max-width: 900px) {
   .case436-panel {
     padding-inline: 28px;
@@ -3565,6 +3821,10 @@ h3 {
 
   .case436-text-row,
   .case436-compare,
+  .relationship-sources,
+  .comparison-map .relationship-sources,
+  .dual-diagram-grid,
+  .data-framework,
   .case436-revision-map,
   .case436-flow-line,
   .case436-action-path,
@@ -3735,6 +3995,23 @@ select {
 .case338-visual-placeholder:hover {
   box-shadow: none !important;
   transform: none !important;
+}
+
+.research-project-index a,
+.relationship-node,
+.relationship-node::after,
+.relationship-result,
+.research-flow span,
+.research-flow span::after,
+.research-flow div,
+.research-flow div::after,
+.case338-session-grid figure,
+.case338-figure,
+.case436-button {
+  transition:
+    border-color 160ms ease,
+    color 160ms ease,
+    background-color 160ms ease !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
