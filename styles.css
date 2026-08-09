@@ -3691,10 +3691,6 @@ h3 {
   border-top: 1px solid var(--case-line);
 }
 
-.contribution-roles .primary-role {
-  border-top-color: var(--case-ink);
-}
-
 .contribution-roles span {
   color: var(--case-faint);
   font-size: 0.64rem;
