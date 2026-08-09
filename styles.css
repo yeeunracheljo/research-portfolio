@@ -2704,22 +2704,22 @@ h3 {
 .case436-output-links {
   justify-self: center;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 220px));
-  gap: 14px;
-  width: min(100%, 454px);
+  grid-template-columns: repeat(2, minmax(0, 260px));
+  gap: 16px;
+  width: min(100%, 548px);
   text-align: center;
 }
 
 .case436-output-links:has(section:only-child) {
-  grid-template-columns: minmax(0, 260px);
-  width: min(100%, 260px);
+  grid-template-columns: minmax(0, 340px);
+  width: min(100%, 340px);
 }
 
 .case436-output-links section {
   display: grid;
-  gap: 12px;
+  gap: 14px;
   justify-items: center;
-  padding: 20px 18px;
+  padding: 24px 22px;
   border: 1px solid var(--case-line);
   background: #ffffff;
 }
@@ -2965,6 +2965,18 @@ h3 {
 .case421-contribution-grid {
   grid-template-columns: 1fr;
   max-width: 900px;
+}
+
+.case421-contribution-stack {
+  gap: 34px;
+}
+
+.case421-contribution-stack section {
+  padding: 30px 0;
+}
+
+.case421-contribution-stack section + section {
+  border-top-color: var(--case-ink);
 }
 
 .case421-process {
@@ -3233,6 +3245,26 @@ h3 {
   white-space: pre-line;
 }
 
+.case421-recommendation-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 42px;
+  max-width: 860px;
+  margin: 0;
+  padding: 16px 0 8px;
+  list-style: none;
+  border-top: 1px solid var(--case-ink);
+}
+
+.case421-recommendation-list li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--case-line);
+  color: var(--case-ink);
+  font-size: 0.94rem;
+  font-weight: 680;
+  line-height: 1.45;
+}
+
 .case421-translation-note {
   justify-self: center;
   width: min(760px, 100%);
@@ -3469,6 +3501,166 @@ h3 {
   white-space: pre-line;
 }
 
+#case436-framework,
+#case436-human-ai,
+#case436-revision,
+#env361-problem,
+#env361-action,
+#env361-trust,
+#env361-original,
+#env338-conditions,
+#env338-cross,
+#env338-insight,
+#env338-analysis,
+#env338-reflection,
+#env338-original,
+#env421-approach,
+#env421-contribution,
+#env421-field,
+#env421-synthesis,
+#env421-recommendations,
+#env421-reflection,
+#env421-original {
+  display: none;
+}
+
+.compact-screen-grid {
+  gap: clamp(22px, 3vw, 34px);
+}
+
+.compact-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(26px, 4vw, 52px);
+  align-items: start;
+}
+
+.compact-question,
+.compact-argument {
+  padding-block: 22px;
+}
+
+.compact-list {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.compact-list div {
+  min-height: 0;
+  padding: 16px 0;
+  background: transparent;
+}
+
+.compact-flow {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.compact-flow div {
+  min-height: 0;
+  padding: 14px 10px;
+}
+
+.compact-flow div::after {
+  display: none;
+}
+
+.compact-findings {
+  gap: 0;
+}
+
+.compact-findings div {
+  padding: 18px 0;
+}
+
+.compact-compare {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.compact-compare section {
+  min-height: 0;
+  padding: 22px 0;
+  background: transparent;
+}
+
+.compact-action-path {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.compact-action-path section {
+  min-height: 0;
+  padding: 18px 0;
+  background: transparent;
+}
+
+.env338-overview-grid {
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.75fr);
+}
+
+.compact-map {
+  max-width: 420px;
+  justify-self: end;
+}
+
+.compact-map img {
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.compact-session-grid {
+  gap: 16px;
+}
+
+.compact-session-grid img {
+  aspect-ratio: 2.05 / 1;
+}
+
+.compact-combined {
+  margin-top: 18px;
+}
+
+.compact-combined img {
+  max-height: 285px;
+}
+
+.compact-method-grid {
+  margin-top: 12px;
+}
+
+.compact-method-grid section {
+  padding: 20px 0;
+}
+
+.compact-contribution strong {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.7;
+}
+
+.compact-bars {
+  max-width: none;
+}
+
+.compact-audit {
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 0;
+  border-top: 1px solid var(--case-ink);
+}
+
+.compact-audit section {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--case-line);
+}
+
+.compact-audit strong {
+  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+}
+
 @media (max-width: 900px) {
   .case436-panel {
     padding-inline: 28px;
@@ -3556,6 +3748,10 @@ h3 {
   .case338-session-grid,
   .case338-caption-row,
   .case338-analysis-types,
+  .compact-two-col,
+  .env338-overview-grid,
+  .compact-flow,
+  .compact-action-path,
   .case421-method-grid,
   .case421-contribution-grid,
   .case421-stat-grid,
@@ -3564,6 +3760,7 @@ h3 {
   .case421-synthesis,
   .case421-equation,
   .case421-recommendation-grid,
+  .case421-recommendation-list,
   .case421-evidence-map,
   .case421-process,
   .case421-process.three {

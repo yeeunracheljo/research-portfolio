@@ -316,6 +316,12 @@ const dictionary = {
     env421Level3: "제도적 제안",
     env421Level3Title: "환경 바꾸기",
     env421Level3P: "정기 폐기물 감사와 설문\n다이닝홀 협력 개선\n음식 재분배 / 커뮤니티 냉장고 인식",
+    env421Rec1: "유연한 양 선택",
+    env421Rec2: "전체 양을 받기 전 시식",
+    env421Rec3: "학생 인식 개입",
+    env421Rec4: "정기 폐기물 감사와 설문",
+    env421Rec5: "다이닝홀 협력 개선",
+    env421Rec6: "음식 재분배 / 커뮤니티 냉장고 인식",
     env421TranslationP: "연구 결과를 단순히 기록하는 데서 끝내지 않고, MealCare와 campus dining stakeholders가 활용할 수 있는 실질적인 intervention 방향으로 연결했습니다.",
     env421ReflectionLabel: "회고",
     env421ReflectionTitle: "여러 방법을 통해 연구하기",
@@ -383,6 +389,55 @@ const textNodeDefaults = new WeakMap();
 const textNodeDictionary = {
   ko: {
     "Contents": "목차",
+    "Project Overview": "프로젝트 개요",
+    "Research Question": "연구 질문",
+    "Research / Design Question": "연구 / 디자인 질문",
+    "Findings / Reflection": "결과 / 회고",
+    "Findings Through Visualization": "시각화를 통한 발견",
+    "Mixed-Methods Findings": "혼합방법 연구 결과",
+    "Audit Findings": "감사 결과",
+    "Three Sampling Conditions": "세 가지 샘플링 조건",
+    "Three Primary Texts": "세 주요 텍스트",
+    "Approach": "접근 방식",
+    "Project Overview": "프로젝트 개요",
+    "AI as a Mirror for Humanity": "인간성을 비추는 거울로서의 AI",
+    "Artificial beings in literature were examined as a way to investigate how humans define identity, emotion, relationships, and belonging.": "문학 속 인공 존재를 통해 인간이 정체성, 감정, 관계, 소속을 어떻게 정의하는지 탐구했습니다.",
+    "The more artificial beings attempt to become human,\nthe more they reveal the boundaries through which humanity defines itself.": "인공 존재가 인간이 되려고 할수록,\n인간성이 정의되는 경계가 더 분명하게 드러납니다.",
+    "Human-like emotion alone did not guarantee recognition as human.": "인간과 유사한 감정만으로는 인간으로 인정받기에 충분하지 않았습니다.",
+    "Replicating behavior raised questions about whether identity can truly be reproduced.": "행동의 재현은 정체성이 실제로 재현될 수 있는지에 대한 질문을 만들었습니다.",
+    "Relationships and emotional connection emerged as important boundaries between human and artificial beings.": "관계와 감정적 연결은 인간과 인공 존재를 구분하는 중요한 경계로 드러났습니다.",
+    "What interested me was not simply how well AI imitates humans,\nbut how humans interpret and judge what AI produces.": "제가 관심을 갖게 된 것은 AI가 인간을 얼마나 잘 모방하는지가 아니라,\n인간이 AI의 결과물을 어떻게 해석하고 판단하는가였습니다.",
+    "AI could produce clear and human-like writing, but evaluating whether its interpretation was meaningful still required human judgment.": "AI는 명확하고 인간처럼 보이는 글을 만들 수 있었지만, 그 해석이 의미 있는지 평가하는 데에는 여전히 인간의 판단이 필요했습니다.",
+    "A conceptual social platform developed to explore how climate communication could move beyond information sharing toward meaningful participation.": "기후 커뮤니케이션이 정보 공유를 넘어 의미 있는 참여로 이어질 수 있는지 탐구하기 위해 제안한 개념적 소셜 플랫폼입니다.",
+    "Online reactions may remain within the platform without leading to further participation.": "온라인 반응은 추가적인 참여로 이어지지 않고 플랫폼 안에 머무를 수 있습니다.",
+    "Endless streams of information can make relevant issues and concrete opportunities difficult to identify.": "끝없이 이어지는 정보는 관련 이슈와 구체적인 참여 기회를 찾기 어렵게 만들 수 있습니다.",
+    "Unreliable information can undermine trust and make meaningful participation more difficult.": "신뢰하기 어려운 정보는 신뢰를 약화시키고 의미 있는 참여를 어렵게 만들 수 있습니다.",
+    "How could a social platform help turn\nenvironmental information into real-world participation?": "소셜 플랫폼은 환경 정보를\n실제 참여로 어떻게 연결할 수 있는가?",
+    "From Information to Offline Action": "온라인 정보에서 오프라인 행동으로",
+    "Stories · Communities": "이야기 · 커뮤니티",
+    "Events · Volunteering · Community Initiatives": "행사 · 봉사 · 커뮤니티 이니셔티브",
+    "PANDO shifted my focus from what users see on an interface to what they are able to do after interacting with it.": "PANDO는 사용자가 인터페이스에서 무엇을 보는가보다, 상호작용 이후 무엇을 할 수 있는가로 관심을 옮기게 했습니다.",
+    "PM2.5 measurements were collected across three campus sampling sessions under different activity and environmental conditions.": "서로 다른 활동 및 환경 조건에서 세 차례의 캠퍼스 PM2.5 측정 데이터를 수집했습니다.",
+    "01 Exploratory Sampling": "01 탐색적 샘플링",
+    "02 Peak Activity": "02 활동 피크",
+    "03 Comparative Condition": "03 비교 조건",
+    "Broad campus sampling across locations with different surrounding activities.": "서로 다른 주변 활동을 가진 캠퍼스 위치를 넓게 샘플링했습니다.",
+    "Focused sampling around the food-truck corridor during lunch.": "점심시간 푸드트럭 구역을 중심으로 집중 샘플링했습니다.",
+    "Same corridor measured again under rainy/lower-activity conditions.": "비가 오고 활동량이 낮은 조건에서 같은 구역을 다시 측정했습니다.",
+    "Different visualizations revealed different dimensions of the same environmental dataset and made differences across conditions easier to compare.": "서로 다른 시각화는 같은 환경 데이터셋의 다른 차원을 드러내고, 조건 간 차이를 더 쉽게 비교하게 했습니다.",
+    "Community-Based Food Waste Research": "커뮤니티 기반 음식물 쓰레기 연구",
+    "MealCare Collaboration": "MealCare 협업",
+    "A year-long community-based research project investigating food waste and dining behavior across University of Toronto dining halls.": "토론토대학교 다이닝홀의 음식물 쓰레기와 식사 행동을 조사한 1년간의 커뮤니티 기반 연구 프로젝트입니다.",
+    "What behavioral and institutional factors contribute\nto food waste in university dining environments?": "대학 다이닝 환경에서 음식물 쓰레기에 기여하는\n행동적·제도적 요인은 무엇인가?",
+    "Self-reported experiences\n& perspectives": "자기보고 경험과\n관점",
+    "Observed behavior\nin context": "맥락 속에서\n관찰된 행동",
+    "Survey Methodology · Survey Analysis & Findings · Food Waste Audit Participation · Canada Room Field Research · Observation & Data Collection · Interpretation": "설문 방법론 · 설문 분석과 결과 도출 · 음식물 쓰레기 감사 참여 · Canada Room 현장 연구 · 관찰과 데이터 수집 · 해석",
+    "What Did Multiple Forms of Evidence Reveal?": "여러 형태의 근거는 무엇을 보여주었는가?",
+    "Observed plates containing edible leftovers": "먹을 수 있는 잔반이 포함된 관찰 접시",
+    "Beyond Portion Size": "양의 문제를 넘어서",
+    "Poor Taste · Undercooking · Fluctuating Appetite · Eating Behavior & Attention": "맛 부족 · 덜 익음 · 변동하는 식욕 · 식사 행동과 주의",
+    "Behavioral Findings → Preventive Interventions → Institutional Recommendations": "행동적 발견 → 예방적 개입 → 제도적 제안",
+    "A single method revealed only part of the behavioral problem. Combining self-reported experiences, observed behavior, and operational perspectives provided a more complete understanding of the research question.": "하나의 방법만으로는 행동 문제의 일부만 볼 수 있었습니다. 자기보고 경험, 관찰된 행동, 운영 관점을 결합하면서 연구 질문을 더 입체적으로 이해할 수 있었습니다.",
     "DHU436 Case Study": "DHU436 케이스 스터디",
     "Research Experience": "연구 경험",
     "AI, Literature & Culture": "AI, 문학과 문화",
@@ -553,6 +608,39 @@ languageButtons.forEach((button) => {
 });
 
 setLanguage(localStorage.getItem("portfolioLanguage") || "en");
+
+const compactHashRedirects = {
+  "#case436-framework": "#case436-project",
+  "#case436-human-ai": "#case436-reflection",
+  "#case436-revision": "#case436-reflection",
+  "#env361-problem": "#env361-context",
+  "#env361-action": "#env361-reflection",
+  "#env361-trust": "#env361-reflection",
+  "#env361-original": "#env361-reflection",
+  "#env338-conditions": "#env338-context",
+  "#env338-cross": "#env338-compare",
+  "#env338-insight": "#env338-compare",
+  "#env338-analysis": "#env338-compare",
+  "#env338-reflection": "#env338-compare",
+  "#env338-original": "#env338-compare",
+  "#env421-approach": "#env421-context",
+  "#env421-contribution": "#env421-context",
+  "#env421-field": "#env421-survey",
+  "#env421-synthesis": "#env421-survey",
+  "#env421-recommendations": "#env421-survey",
+  "#env421-reflection": "#env421-survey",
+  "#env421-original": "#env421-survey",
+};
+
+const redirectCompactHash = () => {
+  const target = compactHashRedirects[window.location.hash];
+  if (!target) return;
+  history.replaceState(null, "", target);
+  document.querySelector(target)?.scrollIntoView();
+};
+
+redirectCompactHash();
+window.addEventListener("hashchange", redirectCompactHash);
 
 const dhuTocLinks = Array.from(document.querySelectorAll(".dhu-toc a"));
 const dhuToc = document.querySelector(".dhu-toc");
