@@ -4196,13 +4196,19 @@ select {
 }
 
 .overview-statement {
-  font-size: clamp(0.88rem, 0.98vw, 0.95rem) !important;
-  line-height: 1.5 !important;
+  max-width: 100% !important;
+  font-size: clamp(0.78rem, 0.86vw, 0.84rem) !important;
+  line-height: 1.45 !important;
 }
 
 .overview-statement strong {
   margin-bottom: 8px !important;
   font-size: clamp(1.32rem, 1.82vw, 1.5rem) !important;
+}
+
+.overview-nowrap {
+  display: block;
+  white-space: nowrap;
 }
 
 .overview-details strong,
