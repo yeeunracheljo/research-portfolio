@@ -4204,7 +4204,18 @@ select {
 
 .overview-nowrap {
   display: block;
-  white-space: nowrap;
+  max-width: 100%;
+  white-space: normal;
+}
+
+#case436-project .project-overview-box,
+#case436-project .evidence-grid section {
+  min-width: 0;
+}
+
+#case436-project .project-overview-box *,
+#case436-project .evidence-grid section * {
+  overflow-wrap: anywhere;
 }
 
 .overview-details strong,
