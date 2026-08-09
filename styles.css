@@ -6521,3 +6521,8 @@ body,
   font-weight: 650 !important;
   line-height: 1.5 !important;
 }
+
+.evidence-summary .result-box strong {
+  font-size: clamp(0.92rem, 1.05vw, 1rem) !important;
+  line-height: 1.5 !important;
+}
