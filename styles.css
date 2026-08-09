@@ -1493,7 +1493,6 @@ h3 {
   font-weight: 650;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 160ms ease, transform 160ms ease;
 }
 
 .dhu-toc a.active {
@@ -2724,17 +2723,18 @@ h3 {
 }
 
 .case436-output-links {
-  justify-self: stretch;
+  justify-self: center;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 260px));
   gap: 16px;
-  width: 100%;
-  text-align: left;
+  width: min(100%, 560px);
+  justify-content: center;
+  text-align: center;
 }
 
 .case436-output-links:has(section:only-child) {
   grid-template-columns: minmax(0, 340px);
-  width: 100%;
+  width: min(100%, 340px);
 }
 
 .case436-output-links section {
@@ -4029,23 +4029,6 @@ select {
   transform: none !important;
 }
 
-.research-project-index a,
-.relationship-node,
-.relationship-node::after,
-.relationship-result,
-.research-flow span,
-.research-flow span::after,
-.research-flow div,
-.research-flow div::after,
-.case338-session-grid figure,
-.case338-figure,
-.case436-button {
-  transition:
-    border-color 160ms ease,
-    color 160ms ease,
-    background-color 160ms ease !important;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -4918,6 +4901,353 @@ body,
   .dhu-toc a::after,
   .dhu-toc a.active span::after {
     display: none;
+  }
+}
+
+/* Final static editorial refinement for compact Research Experience */
+.case436,
+.case436 *,
+.case436 *::before,
+.case436 *::after,
+.research-project-index,
+.research-project-index *,
+.research-project-index *::before,
+.research-project-index *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+.case436-panel > *,
+.case436-panel .case436-content > * {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.case436-button:hover,
+.case436-toc-list a:hover,
+.case436-text-row div:hover,
+.case436-stack section:hover,
+.case436-compare section:hover,
+.case421-method-grid section:hover,
+.case421-contribution-grid section:hover,
+.case421-stat-grid div:hover,
+.case421-synthesis section:hover,
+.case338-session-grid figure:hover,
+.case338-figure:hover,
+.relationship-node:hover,
+.research-flow span:hover,
+.research-flow div:hover {
+  border-color: var(--case-line) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.relationship-sources::after,
+.relationship-node::after,
+.relationship-result::before,
+.relationship-result::after,
+.vertical-flow span:not(:last-child)::after,
+.data-framework > span:first-child::after,
+.data-framework > div::after,
+.case436-revision-map div:first-child::after {
+  display: none !important;
+}
+
+.case436-text-row div,
+.case436-stack section,
+.case436-process div,
+.case436-compare section,
+.case436-argument,
+.case436-revision-map div,
+.case436-revision-map em,
+.case436-reflection-box,
+.case436-insight,
+.case421-method-grid section,
+.case421-contribution-grid section,
+.case421-stat-grid div,
+.case421-audit-evidence section,
+.case421-synthesis section,
+.case436-output-links section,
+.evidence-grid section,
+.result-logic section,
+.result-box,
+.sequence-line span,
+.sampling-condition-grid div,
+.case338-session-grid figure,
+.case338-figure,
+.case421-bar-chart,
+.case421-audit-evidence {
+  border-radius: 5px !important;
+}
+
+.evidence-grid {
+  display: grid;
+  gap: 18px;
+  width: 100%;
+}
+
+.evidence-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.evidence-grid section,
+.result-logic section,
+.sampling-condition-grid div {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  min-height: 118px;
+  padding: 18px;
+  border: 1px solid var(--case-line);
+  background: #ffffff;
+}
+
+.evidence-grid span,
+.result-logic section span,
+.result-box span,
+.sequence-line small,
+.sampling-condition-grid strong {
+  color: var(--case-faint);
+  font-size: 0.64rem;
+  font-weight: 780;
+  letter-spacing: 0.14em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.evidence-grid strong,
+.result-logic section strong,
+.result-box strong,
+.sequence-line strong {
+  color: var(--case-ink);
+  font-size: clamp(0.96rem, 1.3vw, 1.12rem);
+  font-weight: 760;
+  line-height: 1.25;
+}
+
+.evidence-grid p,
+.result-logic section p,
+.result-box p,
+.sampling-condition-grid p {
+  margin: 0;
+  color: var(--case-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.approach-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.approach-pair section {
+  display: grid;
+  gap: 8px;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--case-line);
+}
+
+.approach-pair span {
+  color: var(--case-faint);
+  font-size: 0.64rem;
+  font-weight: 780;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.approach-pair p {
+  margin: 0;
+  color: var(--case-ink);
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.result-logic {
+  display: grid;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+}
+
+.result-logic-three {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.result-logic-ai {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.result-logic > b,
+.result-logic > i,
+.sequence-line > b {
+  display: grid;
+  place-items: center;
+  align-self: center;
+  min-width: 18px;
+  color: var(--case-ink);
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.result-logic > em {
+  grid-column: 1 / -1;
+  justify-self: center;
+  color: var(--case-ink);
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1;
+}
+
+.result-box {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 560px);
+  display: grid;
+  gap: 10px;
+  padding: 20px 24px;
+  border: 1px solid var(--case-line);
+  background: #ffffff;
+  text-align: center;
+}
+
+.result-box.dark {
+  border-color: #111111;
+  background: #111111;
+}
+
+.result-box.dark span,
+.result-box.dark strong,
+.result-box.dark p {
+  color: #ffffff;
+}
+
+.result-box.dark p {
+  color: #d7d7d7;
+}
+
+.result-logic-ai .result-box {
+  grid-column: auto;
+  justify-self: stretch;
+  width: auto;
+}
+
+.centered-result {
+  margin-inline: auto;
+}
+
+.sequence-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.sequence-line > b {
+  display: grid;
+}
+
+.sequence-line span {
+  display: grid;
+  gap: 7px;
+  align-content: center;
+  min-height: 74px;
+  padding: 16px;
+  border: 1px solid var(--case-line);
+  background: #ffffff;
+  text-align: center;
+}
+
+.secondary-sequence {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  padding-top: 8px;
+}
+
+.secondary-sequence span,
+.data-sequence span {
+  min-height: 46px;
+  padding: 12px;
+  color: var(--case-muted);
+  font-size: 0.68rem;
+  font-weight: 760;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.data-sequence {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.compact-data-sequence {
+  width: min(100%, 720px);
+  margin-inline: auto;
+}
+
+.sampling-condition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sampling-condition-grid div {
+  min-height: 132px;
+  border-left: 1px solid var(--case-line) !important;
+}
+
+.case436-original {
+  width: 100%;
+  margin: clamp(32px, 5vw, 56px) auto 0;
+  padding-top: 26px;
+  border-top: 1px solid var(--case-line);
+  text-align: center;
+}
+
+.case436-output-links {
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.case436-output-links section {
+  width: 100%;
+  justify-items: center;
+  text-align: center;
+  background: transparent;
+}
+
+.case436-output-links .case436-button {
+  justify-self: center;
+}
+
+@media (max-width: 900px) {
+  .evidence-grid.three,
+  .result-logic-three,
+  .result-logic-ai,
+  .sequence-line,
+  .secondary-sequence,
+  .data-sequence,
+  .sampling-condition-grid,
+  .approach-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .result-logic-ai .result-box {
+    grid-column: 1 / -1;
+  }
+
+  .result-logic > b,
+  .result-logic > i,
+  .sequence-line > b {
+    display: grid;
+  }
+
+  .result-logic > b,
+  .result-logic > i {
+    min-height: 12px;
   }
 }
 
