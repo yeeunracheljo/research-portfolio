@@ -1872,12 +1872,12 @@ h3 {
   position: fixed;
   left: 0;
   right: 0;
-  top: 68px;
+  top: 53px;
   z-index: 30;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
-  min-height: 64px;
+  min-height: 54px;
   padding: 0 clamp(42px, 10vw, 190px);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
@@ -1900,7 +1900,7 @@ h3 {
   justify-content: center;
   align-items: baseline;
   min-width: 0;
-  padding: 10px 8px 13px;
+  padding: 7px 8px 10px;
   border-bottom: 0;
   color: #8d8d8d;
   text-decoration: none;
@@ -1982,7 +1982,7 @@ h3 {
 
 @media (max-width: 640px) {
   .research-project-index {
-    top: 58px;
+    top: 53px;
   }
 }
 
