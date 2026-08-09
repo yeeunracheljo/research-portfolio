@@ -6396,3 +6396,95 @@ body,
     display: none;
   }
 }
+
+/* Final visible typography scale for Research Experience */
+.case436-panel.case436-white h2 {
+  font-size: clamp(1.82rem, 2.45vw, 2.18rem) !important;
+  line-height: 1.15 !important;
+}
+
+.case436-course-title h2 {
+  font-size: clamp(3.15rem, 6.2vw, 5.15rem) !important;
+}
+
+.case436-course-title h3 {
+  font-size: clamp(1rem, 1.6vw, 1.25rem) !important;
+}
+
+.case436 p,
+.case436-muted,
+.case436-question {
+  font-size: 0.94rem !important;
+  line-height: 1.62 !important;
+}
+
+.case436-label,
+.overview-label,
+.overview-details span,
+.evidence-grid span,
+.result-logic section span,
+.result-box span,
+.pando-support-layer span,
+.contribution-roles span,
+.case338-session-grid figcaption strong,
+.combined-evidence figcaption strong,
+.case436-output-links span {
+  font-size: 0.66rem !important;
+  line-height: 1.25 !important;
+}
+
+.overview-statement {
+  font-size: 0.9rem !important;
+  line-height: 1.55 !important;
+}
+
+.overview-statement strong {
+  font-size: clamp(1.18rem, 1.55vw, 1.34rem) !important;
+  line-height: 1.22 !important;
+}
+
+.overview-details strong,
+.overview-details p,
+.evidence-grid strong,
+.result-logic section strong,
+.result-box strong,
+.sequence-line strong,
+.pando-node strong,
+.pando-support-layer strong,
+.design-principle strong,
+.comparison-reflection p,
+.combined-interpretation,
+.contribution-roles strong {
+  font-size: clamp(0.92rem, 1.05vw, 1rem) !important;
+  line-height: 1.5 !important;
+}
+
+.case436-insight strong {
+  font-size: clamp(1.02rem, 1.25vw, 1.16rem) !important;
+  line-height: 1.35 !important;
+}
+
+.writing-comparison-grid h3 {
+  font-size: 1rem !important;
+}
+
+.writing-comparison-grid p,
+.evidence-grid p,
+.result-logic section p,
+.result-box p,
+.sampling-evidence-grid figcaption span,
+.case338-session-grid figcaption span,
+.pando-node p {
+  font-size: 0.86rem !important;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 760px) {
+  .case436-course-title h2 {
+    font-size: clamp(2.65rem, 13vw, 4.4rem) !important;
+  }
+
+  .case436-panel.case436-white h2 {
+    font-size: clamp(1.58rem, 7vw, 2rem) !important;
+  }
+}
