@@ -16,7 +16,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -2006,8 +2006,6 @@ h3 {
 .case436-panel {
   position: relative;
   overflow: hidden;
-  --panel-x: 50%;
-  --panel-y: 50%;
   min-height: calc(100vh - 68px);
   display: grid;
   align-items: center;
@@ -2015,20 +2013,11 @@ h3 {
 }
 
 .case436-panel.case436-white::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at var(--panel-x) var(--panel-y), rgba(0, 0, 0, 0.045), transparent 28%),
-    linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.018), transparent);
-  opacity: 0;
-  transition: opacity 260ms ease;
+  display: none;
 }
 
 .case436-panel.case436-white:hover::before {
-  opacity: 1;
+  display: none;
 }
 
 .case436-panel > * {
@@ -2631,12 +2620,14 @@ h3 {
 }
 
 .case436-original {
-  justify-self: center;
+  justify-self: stretch;
   margin-top: 40px;
+  width: 100%;
+  text-align: left;
 }
 
 .case436-button {
-  justify-self: center;
+  justify-self: start;
   padding: 14px 28px;
   border: 1px solid var(--case-line);
   color: var(--case-muted);
@@ -2694,25 +2685,26 @@ h3 {
 }
 
 .case436-original-actions {
-  justify-self: center;
+  justify-self: stretch;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .case436-output-links {
-  justify-self: center;
+  justify-self: stretch;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 260px));
   gap: 16px;
-  width: min(100%, 548px);
-  text-align: center;
+  width: 100%;
+  text-align: left;
 }
 
 .case436-output-links:has(section:only-child) {
   grid-template-columns: minmax(0, 340px);
-  width: min(100%, 340px);
+  width: 100%;
 }
 
 .case436-output-links section {
@@ -3299,124 +3291,20 @@ h3 {
 }
 
 .case-title-icon {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  margin-right: 8px;
-  vertical-align: -1px;
-  color: currentColor;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: 0.72;
-  transition: opacity 180ms ease, transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  display: none;
 }
 
 .case436-label:hover .case-title-icon,
 .case436-original:hover .case-title-icon {
-  opacity: 1;
-  transform: translateX(3px);
-}
-
-.case421-interactive {
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
-  --mx: 50%;
-  --my: 50%;
-  --tilt-x: 0deg;
-  --tilt-y: 0deg;
-  background-image:
-    radial-gradient(circle at var(--mx) var(--my), rgba(0, 0, 0, 0.075), transparent 34%),
-    linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.03), transparent);
-  background-size: 100% 100%, 220% 100%;
-  background-position: 0 0, -120% 0;
-  transition:
-    background-position 480ms cubic-bezier(0.22, 1, 0.36, 1),
-    border-color 180ms ease,
-    box-shadow 180ms ease,
-    transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.case421-interactive::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 1px;
-  border: 0;
-  background: var(--case-ink);
-  opacity: 0;
-  transform: scaleX(0);
-  transform-origin: left center;
-  pointer-events: none;
-  transition: opacity 180ms ease, transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.case421-interactive::before {
-  content: "";
-  position: absolute;
-  left: -1px;
-  top: 18px;
-  width: 1px;
-  height: calc(100% - 36px);
-  border: 0;
-  background: var(--case-ink);
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: top center;
-  transition: opacity 180ms ease, transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.case421-interactive:hover,
-.case421-interactive:focus-visible,
-.case421-interactive.is-selected {
-  transform: translateY(-3px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
-  border-color: #b8b8b8;
-  background-position: 0 0, 120% 0;
-  background-color: #fbfbfa;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.045);
-}
-
-.case421-interactive:hover::after,
-.case421-interactive:focus-visible::after,
-.case421-interactive.is-selected::after {
-  opacity: 1;
-  transform: scaleX(1);
-}
-
-.case421-interactive:hover::before,
-.case421-interactive:focus-visible::before,
-.case421-interactive.is-selected::before {
-  opacity: 1;
-  transform: scaleY(1);
-}
-
-.case421-interactive:focus-visible {
-  box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.08);
+  display: none;
 }
 
 .case436-panel.case436-white::after {
-  content: "";
-  position: absolute;
-  left: clamp(28px, 6vw, 92px);
-  bottom: clamp(26px, 5vw, 70px);
-  z-index: 0;
-  width: 54px;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.12);
-  transform: scaleX(0.45);
-  transform-origin: left center;
-  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), background-color 220ms ease;
+  display: none;
 }
 
 .case436-panel.case436-white:hover::after {
-  background: rgba(0, 0, 0, 0.32);
-  transform: scaleX(1.55);
+  display: none;
 }
 
 .case421-evidence-map {
@@ -3526,6 +3414,7 @@ h3 {
 
 .compact-screen-grid {
   gap: clamp(22px, 3vw, 34px);
+  width: 100%;
 }
 
 .compact-two-col {
@@ -3533,6 +3422,7 @@ h3 {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: clamp(26px, 4vw, 52px);
   align-items: start;
+  width: 100%;
 }
 
 .compact-question,
@@ -3555,6 +3445,7 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   margin-top: 12px;
+  width: 100%;
 }
 
 .compact-flow div {
@@ -3568,6 +3459,7 @@ h3 {
 
 .compact-findings {
   gap: 0;
+  width: 100%;
 }
 
 .compact-findings div {
@@ -3577,6 +3469,7 @@ h3 {
 .compact-compare {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+  width: 100%;
 }
 
 .compact-compare section {
@@ -3588,6 +3481,7 @@ h3 {
 .compact-action-path {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
+  width: 100%;
 }
 
 .compact-action-path section {
@@ -3602,7 +3496,7 @@ h3 {
 
 .compact-map {
   max-width: 420px;
-  justify-self: end;
+  justify-self: stretch;
 }
 
 .compact-map img {
@@ -3620,6 +3514,7 @@ h3 {
 
 .compact-combined {
   margin-top: 18px;
+  width: 100%;
 }
 
 .compact-combined img {
@@ -3849,108 +3744,41 @@ select {
   letter-spacing: -0.025em;
 }
 
-.site-nav,
-.case436-dots,
-.case-bottom-nav,
-.case436-button,
-.case436-toc-list a,
-.case436-text-row div,
-.case436-stack section,
-.case436-process div,
-.case436-compare section,
-.case436-revision-map div,
-.case436-revision-map em,
-.case436-reflection-box,
-.case436-insight,
-.case338-visual-placeholder,
-.case421-method-grid section,
-.case421-contribution-grid section,
-.case421-stat-grid div,
-.case421-synthesis section {
-  transition:
-    border-color 220ms ease,
-    background-color 220ms ease,
-    color 220ms ease,
-    opacity 420ms var(--ease-out),
-    transform 420ms var(--ease-out);
-}
-
 .case436-panel > *,
 .case436-panel .case436-content > * {
-  opacity: 0;
-  transform: translateY(18px);
-  transition:
-    opacity 680ms var(--ease-out),
-    transform 680ms var(--ease-out);
-}
-
-.case436-panel.is-revealed > *,
-.case436-panel.is-revealed .case436-content > * {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
-.case436-panel.is-revealed .case436-content > *:nth-child(2) {
-  transition-delay: 70ms;
+.case436-mouse::before {
+  animation: none;
+  transform: translate(-50%, 0);
 }
 
-.case436-panel.is-revealed .case436-content > *:nth-child(3) {
-  transition-delay: 140ms;
-}
-
-.case436-panel.is-revealed .case436-content > *:nth-child(4) {
-  transition-delay: 210ms;
+.case436,
+.case436 *,
+.case436 *::before,
+.case436 *::after {
+  animation: none !important;
+  transition: none !important;
 }
 
 .case436-button:hover,
-.case436-toc-list a:hover {
-  transform: translateY(-2px);
-  border-color: var(--case-ink);
-}
-
+.case436-toc-list a:hover,
 .case436-text-row div:hover,
 .case436-stack section:hover,
 .case436-compare section:hover,
 .case421-method-grid section:hover,
 .case421-contribution-grid section:hover,
 .case421-stat-grid div:hover,
-.case421-synthesis section:hover {
-  transform: translateY(-3px);
-  border-color: #bdbdbd;
-}
-
-.case338-visual-placeholder:hover {
-  border-color: #b8b8b8;
-  background-color: #fbfbfb;
-}
-
-.case436-dots a {
-  transition:
-    background-color 180ms ease,
-    opacity 180ms ease,
-    transform 180ms ease;
-}
-
+.case421-synthesis section:hover,
+.case338-visual-placeholder:hover,
 .case436-dots a:hover,
-.case436-dots a.active {
-  transform: scale(1.55);
-}
-
-.case436-mouse::before {
-  animation: mouse-wheel 1.7s ease-in-out infinite;
-}
-
-@keyframes mouse-wheel {
-  0%,
-  100% {
-    opacity: 0.45;
-    transform: translate(-50%, 0);
-  }
-
-  45% {
-    opacity: 1;
-    transform: translate(-50%, 6px);
-  }
+.case436-dots a.active,
+.case-bottom-nav a:hover,
+.case-bottom-nav a.active {
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
