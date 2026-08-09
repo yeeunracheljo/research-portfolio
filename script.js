@@ -611,6 +611,7 @@ const textNodeDictionary = {
     "Estimated Food Waste": "추정 음식물 쓰레기",
     "Average Waste per Plate": "접시당 평균 추정 폐기량",
     "Food waste could not be explained only as a problem of large portions.": "음식물 쓰레기는 단순히 ‘양이 많아서’ 발생하는 문제만으로 설명되지 않았습니다.",
+    "Based on these findings, the project recommended combining flexible portion options and taste-test opportunities with continued food-waste monitoring and dining hall collaboration to address behavioral and operational factors together.": "유연한 양 선택과 시식 기회를 제공하는 동시에, 지속적인 음식물 쓰레기 모니터링과 다이닝홀 협력을 통해 행동적·운영적 요인을 함께 개선할 것을 제안했습니다.",
     "Flexible Portions · Taste Tests · Awareness · Regular Food Waste Studies · Dining Hall Collaboration": "유연한 양 선택 · 시식 · 인식 개선 · 정기적인 음식물 쓰레기 조사 · 다이닝홀 협업",
     "Observed plates containing edible leftovers": "먹을 수 있는 잔반이 포함된 관찰 접시",
     "Beyond Portion Size": "양의 문제를 넘어서",
