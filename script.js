@@ -198,6 +198,8 @@ const dictionary = {
     env338OriginalLabel: "원본 작업",
     env338OriginalReport: "최종 분석",
     env338OriginalCta: "전체 분석 보고서 보기 ↗",
+    env338OriginalPresentation: "최종 발표",
+    env338OriginalPresentationCta: "발표 자료 보기 ↗",
     env421CoverMeta: "ENV421 · 사회 및 환경 변화를 위한 커뮤니티 연구",
     env421CoverUni: "토론토대학교",
     env421CoverTitle: "혼합방법 연구",
