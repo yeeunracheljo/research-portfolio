@@ -6488,3 +6488,33 @@ body,
     font-size: clamp(1.58rem, 7vw, 2rem) !important;
   }
 }
+
+.result-box.dark,
+.comparison-reflection,
+.design-principle {
+  border: 1px solid #111111 !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  text-align: center !important;
+}
+
+.result-box.dark span,
+.comparison-reflection span,
+.design-principle span {
+  color: rgba(255, 255, 255, 0.64) !important;
+  font-size: 0.66rem !important;
+  font-weight: 720 !important;
+  letter-spacing: 0.14em !important;
+  line-height: 1.25 !important;
+  text-transform: uppercase !important;
+}
+
+.result-box.dark strong,
+.result-box.dark p,
+.comparison-reflection p,
+.design-principle strong {
+  color: #ffffff !important;
+  font-size: clamp(0.92rem, 1.05vw, 1rem) !important;
+  font-weight: 650 !important;
+  line-height: 1.5 !important;
+}
