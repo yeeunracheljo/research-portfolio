@@ -6404,11 +6404,14 @@ body,
 }
 
 .case436-course-title h2 {
-  font-size: clamp(3.15rem, 6.2vw, 5.15rem) !important;
+  font-size: clamp(2.3rem, 4.5vw, 3.7rem) !important;
+  letter-spacing: -0.035em !important;
+  line-height: 0.98 !important;
 }
 
 .case436-course-title h3 {
-  font-size: clamp(1rem, 1.6vw, 1.25rem) !important;
+  font-size: clamp(0.92rem, 1.25vw, 1.05rem) !important;
+  line-height: 1.35 !important;
 }
 
 .case436 p,
@@ -6481,7 +6484,7 @@ body,
 
 @media (max-width: 760px) {
   .case436-course-title h2 {
-    font-size: clamp(2.65rem, 13vw, 4.4rem) !important;
+    font-size: clamp(2rem, 11vw, 3.2rem) !important;
   }
 
   .case436-panel.case436-white h2 {
