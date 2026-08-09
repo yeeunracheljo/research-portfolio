@@ -3678,16 +3678,23 @@ h3 {
 
 .contribution-roles {
   display: grid;
-  grid-template-columns: 1.18fr 1fr 0.82fr;
-  gap: 18px;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--case-line);
+  border-bottom: 1px solid var(--case-line);
 }
 
 .contribution-roles section {
   display: grid;
-  align-content: start;
-  gap: 10px;
-  min-height: 112px;
-  padding: 18px 0 0;
+  grid-template-columns: minmax(170px, 0.28fr) minmax(0, 0.72fr);
+  gap: clamp(18px, 3vw, 40px);
+  align-items: baseline;
+  min-height: 0;
+  padding: 16px 0;
+  border-top: 0;
+}
+
+.contribution-roles section + section {
   border-top: 1px solid var(--case-line);
 }
 
@@ -3701,9 +3708,9 @@ h3 {
 
 .contribution-roles strong {
   color: var(--case-ink);
-  font-size: clamp(1rem, 1.35vw, 1.18rem);
-  font-weight: 760;
-  line-height: 1.42;
+  font-size: clamp(0.88rem, 1vw, 0.96rem);
+  font-weight: 650;
+  line-height: 1.45;
 }
 
 .contribution-roles p {
@@ -5895,8 +5902,13 @@ body,
 	  .approach-pair,
 	  .overview-details,
 	  .contribution-heading,
-  .contribution-roles {
+	  .contribution-roles {
     grid-template-columns: 1fr;
+  }
+
+  .contribution-roles section {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .result-logic-ai .result-box {
