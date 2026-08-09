@@ -1877,8 +1877,8 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
-  min-height: 88px;
-  padding: 0 clamp(48px, 11vw, 220px);
+  min-height: 64px;
+  padding: 0 clamp(42px, 10vw, 190px);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
   background: rgba(255, 255, 255, 0.97);
@@ -1895,12 +1895,12 @@ h3 {
   position: relative;
   display: grid;
   grid-template-columns: auto minmax(0, max-content);
-  gap: 4px 13px;
+  gap: 3px 11px;
   align-content: center;
   justify-content: center;
   align-items: baseline;
   min-width: 0;
-  padding: 16px 10px 19px;
+  padding: 10px 8px 13px;
   border-bottom: 0;
   color: #8d8d8d;
   text-decoration: none;
@@ -1912,14 +1912,14 @@ h3 {
   left: 22%;
   right: 22%;
   bottom: -1px;
-  height: 3px;
+  height: 2px;
   background: transparent;
 }
 
 .research-project-index span,
 .research-project-index small {
   color: inherit;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 780;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -1933,7 +1933,7 @@ h3 {
 .research-project-index strong {
   overflow: hidden;
   color: inherit;
-  font-size: 0.83rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.1;
@@ -1944,7 +1944,7 @@ h3 {
 .research-project-index small {
   grid-column: 2;
   color: inherit;
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   font-weight: 620;
   line-height: 1.15;
   opacity: 0.86;
@@ -1966,13 +1966,13 @@ h3 {
   .research-project-index {
     grid-template-columns: repeat(4, minmax(190px, 1fr));
     overflow-x: auto;
-    min-height: 78px;
+    min-height: 64px;
     padding: 0 24px;
   }
 
   .research-project-index a {
     justify-content: start;
-    padding-block: 13px 17px;
+    padding-block: 10px 13px;
   }
 
   .research-project-index strong {
@@ -3564,6 +3564,73 @@ h3 {
   font-size: 0.95rem;
   font-weight: 650;
   line-height: 1.7;
+}
+
+.env421-contribution-summary {
+  display: grid;
+  gap: 18px;
+  padding-top: 24px;
+  border-top: 1px solid var(--case-ink);
+}
+
+.contribution-heading {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.24fr) minmax(0, 0.76fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.contribution-heading .case436-label {
+  margin: 0;
+}
+
+.contribution-heading p:last-child {
+  margin: 0;
+  max-width: 620px;
+  color: var(--case-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.contribution-roles {
+  display: grid;
+  grid-template-columns: 1.18fr 1fr 0.82fr;
+  gap: 18px;
+}
+
+.contribution-roles section {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 142px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--case-line);
+}
+
+.contribution-roles .primary-role {
+  border-top-color: var(--case-ink);
+}
+
+.contribution-roles span {
+  color: var(--case-faint);
+  font-size: 0.64rem;
+  font-weight: 780;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contribution-roles strong {
+  color: var(--case-ink);
+  font-size: 0.96rem;
+  font-weight: 760;
+  line-height: 1.25;
+}
+
+.contribution-roles p {
+  margin: 0;
+  color: var(--case-muted);
+  font-size: 0.84rem;
+  line-height: 1.58;
 }
 
 .compact-bars {
@@ -5231,7 +5298,9 @@ body,
   .secondary-sequence,
   .data-sequence,
   .sampling-condition-grid,
-  .approach-pair {
+  .approach-pair,
+  .contribution-heading,
+  .contribution-roles {
     grid-template-columns: 1fr;
   }
 
