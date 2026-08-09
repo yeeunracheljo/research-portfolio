@@ -4170,6 +4170,44 @@ select {
   --accent: #111111;
 }
 
+.case436-title h2 {
+  font-size: clamp(3.35rem, 7.2vw, 6.2rem) !important;
+}
+
+.case436-title .case436-kicker {
+  font-size: clamp(1rem, 1.85vw, 1.48rem) !important;
+}
+
+.case436-sub {
+  font-size: 1rem !important;
+}
+
+.case436 h2 {
+  font-size: clamp(2rem, 3vw, 2.35rem) !important;
+}
+
+.case436 p {
+  font-size: clamp(0.94rem, 1.05vw, 1rem) !important;
+}
+
+.overview-label,
+.overview-details span {
+  font-size: clamp(0.68rem, 0.82vw, 0.76rem) !important;
+}
+
+.overview-statement {
+  font-size: clamp(0.98rem, 1.15vw, 1.08rem) !important;
+}
+
+.overview-statement strong {
+  font-size: clamp(1.42rem, 2vw, 1.65rem) !important;
+}
+
+.overview-details strong,
+.overview-details p {
+  font-size: clamp(0.95rem, 1.08vw, 1.02rem) !important;
+}
+
 .project-overview-box,
 .project-overview-box * {
   box-shadow: none !important;
