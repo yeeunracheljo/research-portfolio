@@ -5316,6 +5316,99 @@ body,
   line-height: 1.55;
 }
 
+.pando-response-table {
+  display: grid;
+  gap: 0;
+  width: 100%;
+  border-top: 1px solid var(--case-ink);
+}
+
+.pando-response-table section {
+  display: grid;
+  grid-template-columns: 36px minmax(130px, 0.75fr) minmax(170px, 0.95fr) minmax(360px, 1.6fr);
+  gap: clamp(14px, 2vw, 26px);
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--case-line);
+}
+
+.pando-response-table section > span,
+.pando-response-table small {
+  color: var(--case-faint);
+  font-size: 0.62rem;
+  font-weight: 760;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.pando-response-table section > span {
+  color: var(--case-ink);
+}
+
+.pando-response-table div {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.pando-response-table strong {
+  color: var(--case-ink);
+  font-size: clamp(0.86rem, 0.95vw, 0.94rem);
+  font-weight: 680;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.feature-tags {
+  display: flex !important;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.feature-tags em {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 5px 8px;
+  border: 1px solid var(--case-line);
+  border-radius: 3px;
+  color: var(--case-muted);
+  font-size: clamp(0.68rem, 0.78vw, 0.76rem);
+  font-style: normal;
+  font-weight: 560;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.pando-outcome-line {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  width: min(100%, 520px);
+  margin: 8px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--case-line);
+  text-align: center;
+}
+
+.pando-outcome-line span {
+  color: var(--case-faint);
+  font-size: 0.68rem;
+  font-weight: 720;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.pando-outcome-line strong {
+  color: var(--case-ink);
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  font-weight: 680;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
 .env338-overview-grid {
   grid-template-columns: 1fr !important;
 }
@@ -5709,6 +5802,7 @@ body,
 	  .sampling-evidence-grid,
 	  .writing-comparison-grid,
 	  .concept-structure-grid,
+	  .pando-response-table section,
 	  .approach-pair,
 	  .overview-details,
 	  .contribution-heading,
