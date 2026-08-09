@@ -5571,6 +5571,16 @@ body,
   text-transform: uppercase;
 }
 
+.combined-interpretation {
+  max-width: 760px;
+  margin: 16px 0 0;
+  color: var(--case-ink);
+  font-size: clamp(0.95rem, 1.08vw, 1.05rem);
+  font-weight: 560;
+  line-height: 1.65;
+  text-align: left;
+}
+
 .evidence-grid {
   display: grid;
   gap: 18px;

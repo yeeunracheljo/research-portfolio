@@ -578,6 +578,7 @@ const textNodeDictionary = {
     "Distinct Concentration Peaks": "뚜렷한 농도 피크",
     "Relatively Lower Concentration Range": "상대적으로 낮은 농도 범위",
     "Combined Comparison": "통합 비교",
+    "Under conditions where activity and emission sources were concentrated, PM2.5 increased sharply, while rainy and lower-activity conditions remained at lower levels. This suggests that short-term campus PM2.5 can vary with the combination of human activity and environmental conditions.": "활동과 배출원이 집중된 조건에서는 PM2.5가 크게 증가한 반면, 비와 낮은 활동량에서는 낮은 수준을 유지했습니다. 이는 캠퍼스의 단기 PM2.5가 인간 활동과 환경 조건의 결합에 따라 달라질 수 있음을 보여줍니다.",
     "Community-Based Food Waste Research": "커뮤니티 기반 음식물 쓰레기 연구",
     "MealCare Collaboration": "MealCare 협업",
     "A year-long community-based research project investigating food waste and dining behavior across University of Toronto dining halls.": "토론토대학교 다이닝홀의 음식물 쓰레기와 식사 행동을 조사한 1년간의 커뮤니티 기반 연구 프로젝트입니다.",
