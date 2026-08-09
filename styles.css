@@ -5324,7 +5324,9 @@ body,
 .sampling-evidence-grid figure {
   display: grid;
   gap: 12px;
+  width: min(100%, 760px);
   margin: 0;
+  margin-inline: auto;
 }
 
 .map-crop {
