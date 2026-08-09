@@ -679,88 +679,61 @@ if (dhuTocLinks.length && dhuSections.length) {
   window.addEventListener("resize", updateDhuTocTone);
 }
 
-document.querySelectorAll(".case436-dots").forEach((nav) => {
-  const links = Array.from(nav.querySelectorAll("a"));
-  const sections = links
-    .map((link) => document.querySelector(link.getAttribute("href")))
-    .filter(Boolean);
+const projectIndex = document.querySelector(".research-project-index");
+const projectIndexLinks = Array.from(document.querySelectorAll(".research-project-index a"));
+const projectTocLinks = Array.from(document.querySelectorAll(".case436-toc-list a"));
+const projectPanels = Array.from(document.querySelectorAll(".case436-panel"));
+const projectActiveHref = {
+  dhu436: "#case436-course",
+  env361: "#env361-cover",
+  env338: "#env338-cover",
+  env421: "#env421-cover",
+};
 
-  if (!links.length || !sections.length) return;
+const getProjectKey = (id) => {
+  if (id?.startsWith("env361")) return "env361";
+  if (id?.startsWith("env338")) return "env338";
+  if (id?.startsWith("env421")) return "env421";
+  if (id?.startsWith("case436") && id !== "case436-cover" && id !== "case436-toc") return "dhu436";
+  return "";
+};
 
-  const setActiveCaseSection = (section) => {
-    document.querySelectorAll(".case436-dots").forEach((caseNav) => {
-      caseNav.classList.remove("is-visible");
-    });
-    links.forEach((link) => {
-      link.classList.toggle("active", link.getAttribute("href") === `#${section.id}`);
-    });
-    nav.classList.add("is-visible");
-    nav.classList.toggle("on-dark", section.classList.contains("case436-black"));
-  };
+const setActiveProjectIndex = (projectKey) => {
+  const activeHref = projectActiveHref[projectKey];
+  [...projectIndexLinks, ...projectTocLinks].forEach((link) => {
+    link.classList.toggle("active", Boolean(activeHref) && link.getAttribute("href") === activeHref);
+  });
+};
 
-  const observer = new IntersectionObserver(
+const updateProjectIndexVisibility = () => {
+  if (!projectIndex) return;
+  const tocPanel = document.getElementById("case436-toc");
+  const lastProject = document.getElementById("env421-survey");
+  if (!tocPanel || !lastProject) return;
+  const tocBottom = tocPanel.getBoundingClientRect().bottom;
+  const lastBottom = lastProject.getBoundingClientRect().bottom;
+  projectIndex.classList.toggle("is-visible", tocBottom <= 70 && lastBottom > 90);
+};
+
+if ("IntersectionObserver" in window && projectPanels.length) {
+  const projectObserver = new IntersectionObserver(
     (entries) => {
       const visible = entries
         .filter((entry) => entry.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (visible) setActiveCaseSection(visible.target);
-    },
-    { rootMargin: "-20% 0px -58% 0px", threshold: [0.1, 0.35, 0.6] },
-  );
-
-  sections.forEach((section) => observer.observe(section));
-  if (links.some((link) => link.getAttribute("href") === window.location.hash)) {
-    setActiveCaseSection(document.querySelector(window.location.hash));
-  } else if (!window.location.hash && nav === document.querySelector(".case436-dots")) {
-    setActiveCaseSection(sections[0]);
-  }
-});
-
-const caseIndexNavs = Array.from(document.querySelectorAll(".case-bottom-nav"));
-const caseIndexPanels = Array.from(document.querySelectorAll(".case436-panel"));
-
-if ("IntersectionObserver" in window && caseIndexNavs.length && caseIndexPanels.length) {
-  const setActiveCaseIndex = (panel) => {
-    caseIndexNavs.forEach((nav) => {
-      const links = Array.from(nav.querySelectorAll("a"));
-      const activeLink = links.find((link) => link.getAttribute("href") === `#${panel.id}`);
-      nav.classList.toggle("is-visible", Boolean(activeLink));
-      if (!activeLink) nav.classList.remove("is-expanded");
-      links.forEach((link) => link.classList.toggle("active", link === activeLink));
-    });
-  };
-
-  const caseIndexObserver = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (visible) setActiveCaseIndex(visible.target);
+      if (!visible) return;
+      setActiveProjectIndex(getProjectKey(visible.target.id));
+      updateProjectIndexVisibility();
     },
     { rootMargin: "-28% 0px -50% 0px", threshold: [0.08, 0.28, 0.5] },
   );
 
-  caseIndexPanels.forEach((panel) => caseIndexObserver.observe(panel));
+  projectPanels.forEach((panel) => projectObserver.observe(panel));
 }
 
-caseIndexNavs.forEach((nav) => {
-  nav.addEventListener("click", (event) => {
-    if (!nav.classList.contains("is-expanded")) {
-      event.preventDefault();
-      event.stopPropagation();
-      caseIndexNavs.forEach((otherNav) => {
-        if (otherNav !== nav) otherNav.classList.remove("is-expanded");
-      });
-      nav.classList.add("is-expanded");
-    }
-  });
-});
-
-document.addEventListener("click", (event) => {
-  if (!event.target.closest(".case-bottom-nav")) {
-    caseIndexNavs.forEach((nav) => nav.classList.remove("is-expanded"));
-  }
-});
+updateProjectIndexVisibility();
+window.addEventListener("scroll", updateProjectIndexVisibility, { passive: true });
+window.addEventListener("resize", updateProjectIndexVisibility);
 
 const topNavLinks = Array.from(document.querySelectorAll(".site-nav nav a[href^='#']"));
 const topNavTargets = Array.from(document.querySelectorAll(".case436-panel"));
