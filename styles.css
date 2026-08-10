@@ -6702,6 +6702,115 @@ body,
   text-align: center !important;
 }
 
+.case361 .pando-transformation {
+  gap: clamp(18px, 2.4vw, 30px) !important;
+  margin-top: 6px;
+}
+
+.case361 .pando-node {
+  min-height: 150px;
+  align-content: start;
+  gap: 18px;
+  padding: 22px 20px;
+  border: 1px solid var(--case-line);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.case361 .pando-node + .pando-node::before {
+  content: none !important;
+}
+
+.case361 .pando-node span {
+  color: var(--case-faint);
+  font-size: 0.66rem !important;
+  font-weight: 760;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.case361 .pando-node strong {
+  color: var(--case-ink);
+  font-size: clamp(0.94rem, 1.08vw, 1.02rem) !important;
+  font-weight: 650;
+  line-height: 1.48 !important;
+}
+
+.case361 .pando-destination {
+  border-color: var(--case-line);
+}
+
+.case361 .pando-support-layer {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.2fr) minmax(0, 0.8fr);
+  gap: clamp(18px, 2.5vw, 34px);
+  align-items: center !important;
+  margin-top: clamp(20px, 3vw, 34px);
+  padding: 18px 20px;
+  border: 1px solid var(--case-line);
+  border-radius: 4px;
+  background: #f7f7f5;
+}
+
+.case361 .trust-layer-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  align-items: center;
+}
+
+.case361 .trust-layer-items strong {
+  padding: 0;
+  border: 0;
+  color: var(--case-ink);
+  font-size: clamp(0.82rem, 0.94vw, 0.9rem) !important;
+  font-weight: 620;
+  line-height: 1.35;
+}
+
+.case361 .design-decisions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: clamp(26px, 4vw, 40px) 0 0;
+  border: 0;
+}
+
+.case361 .design-decisions ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 24px);
+  padding: 0;
+  list-style: none;
+}
+
+.case361 .design-decisions li {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 20px 18px;
+  border: 1px solid var(--case-line);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.case361 .design-decisions li strong {
+  font-size: 0.88rem;
+  line-height: 1.3;
+}
+
+.case361 .design-decisions li span {
+  color: var(--case-muted);
+  font-size: 0.84rem;
+  font-weight: 520;
+  line-height: 1.55;
+}
+
+.case361 .design-principle {
+  margin-top: clamp(22px, 3vw, 34px);
+}
+
 .contribution-roles {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: clamp(16px, 2vw, 24px) !important;
@@ -6753,8 +6862,17 @@ body,
     left: 50%;
   }
 
+  .case361 .pando-node + .pando-node::before {
+    content: none !important;
+  }
+
   .design-decisions li {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .case361 .pando-support-layer,
+  .case361 .design-decisions ul {
+    grid-template-columns: 1fr;
   }
 }
