@@ -6694,6 +6694,9 @@ body,
 
 .combined-evidence {
   width: min(96%, 1080px) !important;
+  display: grid;
+  justify-items: center;
+  margin-inline: auto !important;
 }
 
 .combined-evidence .combined-interpretation {
