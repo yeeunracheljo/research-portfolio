@@ -6692,6 +6692,20 @@ body,
   aspect-ratio: 1.86 / 1 !important;
 }
 
+.map-full {
+  width: 100%;
+  overflow: visible;
+  border: 1px solid var(--case-line);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.map-full img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .combined-evidence {
   width: min(96%, 1080px) !important;
   display: grid;
